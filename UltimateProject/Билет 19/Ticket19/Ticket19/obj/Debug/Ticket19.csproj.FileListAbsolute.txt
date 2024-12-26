@@ -1,0 +1,15 @@
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\bin\Debug\Ticket19.exe.config
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\bin\Debug\Ticket19.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\bin\Debug\Ticket19.pdb
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\Ticket19.csproj.AssemblyReference.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\MainWindow.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\App.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\Ticket19_MarkupCompile.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\Ticket19_MarkupCompile.lref
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\MainWindow.baml
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\Ticket19.g.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\Ticket19.Properties.Resources.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\Ticket19.csproj.GenerateResource.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\Ticket19.csproj.CoreCompileInputs.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\Ticket19.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 19\Ticket19\Ticket19\obj\Debug\Ticket19.pdb

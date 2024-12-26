@@ -1,0 +1,348 @@
+{\rtf1\ansi\ansicpg1251\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset204 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\i\f0\fs22\lang1049\'cf\'e5\'f0\'e5\'e3\'f0\'f3\'e7\'ea\'e0 \'ec\'e5\'f2\'ee\'e4\'ee\'e2: \'ef\'ee\'ed\'ff\'f2\'e8\'e5, \'ef\'f0\'e8\'ec\'e5\'ed\'e5\'ed\'e8\'e5, \'ef\'f0\'e8\'ec\'e5\'f0\'fb \'ed\'e0 \'ff\'e7\'fb\'ea\'e5 C#.\par
+Generics \'e2 C#: \'ef\'ee\'ed\'ff\'f2\'e8\'e5, \'ef\'f0\'e8\'ec\'e5\'f0\'fb.\par
+\'cd\'e0\'ef\'e8\'f8\'e8\'f2\'e5 \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'f3, \'ea\'ee\'f2\'ee\'f0\'e0\'ff \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fe \'e2\'fb\'e1\'f0\'e0\'f2\'fc \'f2\'e5\'ea\'f1\'f2\'ee\'e2\'fb\'e9 \'f4\'e0\'e9\'eb, \'f1\'f7\'e8\'f2\'e0\'f2\'fc \'e5\'e3\'ee \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'ec\'ee\'e5 \'e8 \'ee\'f2\'ee\'e1\'f0\'e0\'e7\'e8\'f2\'fc \'e2 \'f2\'e5\'ea\'f1\'f2\'ee\'e2\'ee\'ec \'ef\'ee\'eb\'e5 \'ed\'e0 \'f4\'ee\'f0\'ec\'e5. \'c4\'ee\'e1\'e0\'e2\'fc\'f2\'e5 \'e2\'ee\'e7\'ec\'ee\'e6\'ed\'ee\'f1\'f2\'fc \'f1\'ee\'f5\'f0\'e0\'ed\'e5\'ed\'e8\'ff \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e9 \'e2 \'f4\'e0\'e9\'eb. \'cf\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e0 \'e4\'ee\'eb\'e6\'ed\'e0 \'ea\'ee\'f0\'f0\'e5\'ea\'f2\'ed\'ee \'ee\'e1\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'f2\'fc \'f1\'e8\'f2\'f3\'e0\'f6\'e8\'e8, \'ea\'ee\'e3\'e4\'e0 \'e2\'fb\'e1\'f0\'e0\'ed\'ed\'fb\'e9 \'f4\'e0\'e9\'eb \'ed\'e5 \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'e5\'f2 \'e8\'eb\'e8 \'e8\'ec\'e5\'e5\'f2 \'ed\'e5\'e2\'e5\'f0\'ed\'fb\'e9 \'f4\'ee\'f0\'ec\'e0\'f2. \'c2\'fb\'e2\'ee\'e4\'e8\'f2\'e5 \'e8\'ed\'f4\'ee\'f0\'ec\'e0\'f2\'e8\'e2\'ed\'ee\'e5 \'f1\'ee\'ee\'e1\'f9\'e5\'ed\'e8\'e5 \'ee\'e1 \'ee\'f8\'e8\'e1\'ea\'e5 \'e2 \'f1\'eb\'f3\'f7\'e0\'e5 \'e8\'f1\'ea\'eb\'fe\'f7\'e5\'ed\'e8\'ff.\par
+\par
+\b0\i0\'cf\'e5\'f0\'e5\'e3\'f0\'f3\'e7\'ea\'e0 \'ec\'e5\'f2\'ee\'e4\'ee\'e2 (method overloading) \f1\emdash  \f0\'fd\'f2\'ee \'e2\'ee\'e7\'ec\'ee\'e6\'ed\'ee\'f1\'f2\'fc \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'ff \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'e8\'f5 \'ec\'e5\'f2\'ee\'e4\'ee\'e2 \'f1 \'ee\'e4\'ed\'e8\'ec \'e8 \'f2\'e5\'ec \'e6\'e5 \'e8\'ec\'e5\'ed\'e5\'ec \'e2 \'ee\'e4\'ed\'ee\'ec \'ea\'eb\'e0\'f1\'f1\'e5, \'ed\'ee \'f1 \'f0\'e0\'e7\'ed\'fb\'ec\'e8 \'f1\'e8\'e3\'ed\'e0\'f2\'f3\'f0\'e0\'ec\'e8. \'d1\'e8\'e3\'ed\'e0\'f2\'f3\'f0\'e0 \'ec\'e5\'f2\'ee\'e4\'e0 \'e2\'ea\'eb\'fe\'f7\'e0\'e5\'f2:\par
+\'c8\'ec\'ff \'ec\'e5\'f2\'ee\'e4\'e0: \'c4\'ee\'eb\'e6\'ed\'ee \'e1\'fb\'f2\'fc \'ee\'e4\'e8\'ed\'e0\'ea\'ee\'e2\'fb\'ec \'e4\'eb\'ff \'e2\'f1\'e5\'f5 \'ef\'e5\'f0\'e5\'e3\'f0\'f3\'e6\'e5\'ed\'ed\'fb\'f5 \'ec\'e5\'f2\'ee\'e4\'ee\'e2.\par
+\'ca\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2: \'c4\'ee\'eb\'e6\'ed\'ee \'ee\'f2\'eb\'e8\'f7\'e0\'f2\'fc\'f1\'ff \'e4\'eb\'ff \'ef\'e5\'f0\'e5\'e3\'f0\'f3\'e6\'e5\'ed\'ed\'fb\'f5 \'ec\'e5\'f2\'ee\'e4\'ee\'e2.\par
+\'d2\'e8\'ef\'fb \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2: \'c4\'ee\'eb\'e6\'ed\'fb \'ee\'f2\'eb\'e8\'f7\'e0\'f2\'fc\'f1\'ff \'e4\'eb\'ff \'ef\'e5\'f0\'e5\'e3\'f0\'f3\'e6\'e5\'ed\'ed\'fb\'f5 \'ec\'e5\'f2\'ee\'e4\'ee\'e2.\par
+\'cf\'ee\'f0\'ff\'e4\'ee\'ea \'f2\'e8\'ef\'ee\'e2 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2: \'c4\'ee\'eb\'e6\'e5\'ed \'ee\'f2\'eb\'e8\'f7\'e0\'f2\'fc\'f1\'ff \'e4\'eb\'ff \'ef\'e5\'f0\'e5\'e3\'f0\'f3\'e6\'e5\'ed\'ed\'fb\'f5 \'ec\'e5\'f2\'ee\'e4\'ee\'e2 (\'e5\'f1\'eb\'e8 \'f2\'e8\'ef\'fb \'f0\'e0\'e7\'ed\'fb\'e5).\par
+\'c2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'e5\'ec\'fb\'e9 \'f2\'e8\'ef \'ec\'e5\'f2\'ee\'e4\'e0 \'ed\'e5 \'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'f7\'e0\'f1\'f2\'fc\'fe \'f1\'e8\'e3\'ed\'e0\'f2\'f3\'f0\'fb \'e8 \'ed\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'e4\'eb\'ff \'f0\'e0\'e7\'eb\'e8\'f7\'e5\'ed\'e8\'ff \'ef\'e5\'f0\'e5\'e3\'f0\'f3\'e6\'e5\'ed\'ed\'fb\'f5 \'ec\'e5\'f2\'ee\'e4\'ee\'e2.\par
+\b\'cf\'f0\'e8\'ec\'e5\'ed\'e5\'ed\'e8\'e5 \'ef\'e5\'f0\'e5\'e3\'f0\'f3\'e7\'ea\'e8 \'ec\'e5\'f2\'ee\'e4\'ee\'e2\b0\par
+\'ce\'f1\'ed\'ee\'e2\'ed\'ee\'e5 \'ef\'f0\'e8\'ec\'e5\'ed\'e5\'ed\'e8\'e5 \'ef\'e5\'f0\'e5\'e3\'f0\'f3\'e7\'ea\'e8 \'ec\'e5\'f2\'ee\'e4\'ee\'e2 \f1\emdash  \f0\'fd\'f2\'ee \'ef\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'f3\'e4\'ee\'e1\'ed\'ee\'e3\'ee \'e8 \'e3\'e8\'e1\'ea\'ee\'e3\'ee API (\'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'e0 \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff) \'e4\'eb\'ff \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff \'ea\'eb\'e0\'f1\'f1\'e0. \'ce\'ed\'e0 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2:\par
+\'ce\'e1\'e5\'f1\'ef\'e5\'f7\'e8\'f2\'fc \'f0\'e0\'e7\'ed\'fb\'e5 \'f1\'ef\'ee\'f1\'ee\'e1\'fb \'e2\'fb\'e7\'ee\'e2\'e0 \'ee\'e4\'ed\'ee\'e3\'ee \'e8 \'f2\'ee\'e3\'ee \'e6\'e5 \'e4\'e5\'e9\'f1\'f2\'e2\'e8\'ff: \'cd\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'e2\'fb \'ec\'ee\'e6\'e5\'f2\'e5 \'e8\'ec\'e5\'f2\'fc \'ec\'e5\'f2\'ee\'e4 \'e4\'eb\'ff \'e2\'fb\'f7\'e8\'f1\'eb\'e5\'ed\'e8\'ff \'f1\'f3\'ec\'ec\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ec\'ee\'e6\'e5\'f2 \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'f2\'fc \'e4\'e2\'e0 \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'eb\'e0, \'f2\'f0\'e8 \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'eb\'e0 \'e8\'eb\'e8 \'e4\'e2\'e0 \'f7\'e8\'f1\'eb\'e0 \'f1 \'ef\'eb\'e0\'e2\'e0\'fe\'f9\'e5\'e9 \'f2\'ee\'f7\'ea\'ee\'e9.\par
+\'d1\'e4\'e5\'eb\'e0\'f2\'fc \'ea\'ee\'e4 \'e1\'ee\'eb\'e5\'e5 \'f7\'e8\'f2\'e0\'e5\'ec\'fb\'ec \'e8 \'f3\'e4\'ee\'e1\'ed\'fb\'ec: \'c2\'ec\'e5\'f1\'f2\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff \'f0\'e0\'e7\'ed\'fb\'f5 \'e8\'ec\'e5\'ed \'ec\'e5\'f2\'ee\'e4\'ee\'e2 \'e4\'eb\'ff \'f0\'e0\'e7\'ed\'fb\'f5 \'e2\'e0\'f0\'e8\'e0\'ed\'f2\'ee\'e2 \'ee\'e4\'ed\'ee\'e3\'ee \'e4\'e5\'e9\'f1\'f2\'e2\'e8\'ff, \'ec\'ee\'e6\'ed\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'ee\'e4\'ed\'ee \'e8 \'f2\'ee \'e6\'e5 \'e8\'ec\'ff \'e8 \'f0\'e0\'e7\'eb\'e8\'f7\'e0\'f2\'fc \'e8\'f5 \'ef\'ee \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0\'ec.\par
+\'d3\'ef\'f0\'ee\'f1\'f2\'e8\'f2\'fc \'f0\'e0\'e1\'ee\'f2\'f3 \'f1 \'f0\'e0\'e7\'ed\'fb\'ec\'e8 \'f2\'e8\'ef\'e0\'ec\'e8 \'e4\'e0\'ed\'ed\'fb\'f5: \'cc\'ee\'e6\'ed\'ee \'e8\'ec\'e5\'f2\'fc \'ec\'e5\'f2\'ee\'e4\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f2 \'f1 \'f0\'e0\'e7\'ed\'fb\'ec\'e8 \'f2\'e8\'ef\'e0\'ec\'e8 \'e4\'e0\'ed\'ed\'fb\'f5, \'ed\'ee \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'fe\'f2 \'ee\'e4\'ed\'ee \'e8 \'f2\'ee \'e6\'e5 \'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5.\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0\'fb \'ed\'e0 \'ff\'e7\'fb\'ea\'e5 C#\b0\par
+using System;\par
+public class Calculator\par
+\{\par
+    // \'cf\'e5\'f0\'e5\'e3\'f0\'f3\'e6\'e5\'ed\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4 Add \'e4\'eb\'ff \'f1\'eb\'ee\'e6\'e5\'ed\'e8\'ff \'e4\'e2\'f3\'f5 \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'e5\'eb\par
+    public int Add(int a, int b)\par
+    \{\par
+        Console.WriteLine("\'d1\'ea\'eb\'e0\'e4\'fb\'e2\'e0\'e5\'ec \'e4\'e2\'e0 \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'eb\'e0");\par
+        return a + b;\par
+    \}\par
+    // \'cf\'e5\'f0\'e5\'e3\'f0\'f3\'e6\'e5\'ed\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4 Add \'e4\'eb\'ff \'f1\'eb\'ee\'e6\'e5\'ed\'e8\'ff \'f2\'f0\'e5\'f5 \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'e5\'eb\par
+    public int Add(int a, int b, int c)\par
+    \{\par
+        Console.WriteLine("\'d1\'ea\'eb\'e0\'e4\'fb\'e2\'e0\'e5\'ec \'f2\'f0\'e8 \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'eb\'e0");\par
+        return a + b + c;\par
+    \}\par
+    // \'cf\'e5\'f0\'e5\'e3\'f0\'f3\'e6\'e5\'ed\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4 Add \'e4\'eb\'ff \'f1\'eb\'ee\'e6\'e5\'ed\'e8\'ff \'e4\'e2\'f3\'f5 \'f7\'e8\'f1\'e5\'eb \'f1 \'ef\'eb\'e0\'e2\'e0\'fe\'f9\'e5\'e9 \'f2\'ee\'f7\'ea\'ee\'e9\par
+    public double Add(double a, double b)\par
+    \{\par
+        Console.WriteLine("\'d1\'ea\'eb\'e0\'e4\'fb\'e2\'e0\'e5\'ec \'e4\'e2\'e0 \'f7\'e8\'f1\'eb\'e0 \'f1 \'ef\'eb\'e0\'e2\'e0\'fe\'f9\'e5\'e9 \'f2\'ee\'f7\'ea\'ee\'e9");\par
+        return a + b;\par
+    \}\par
+    // \'cf\'e5\'f0\'e5\'e3\'f0\'f3\'e6\'e5\'ed\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4 Add \'e4\'eb\'ff \'f1\'eb\'ee\'e6\'e5\'ed\'e8\'ff \'f1\'f2\'f0\'ee\'ea\'e8 \'e8 \'f6\'e5\'eb\'ee\'e3\'ee \'f7\'e8\'f1\'eb\'e0\par
+    public string Add(string text, int num)\par
+    \{\par
+        Console.WriteLine("\'d1\'ea\'eb\'e0\'e4\'fb\'e2\'e0\'e5\'ec \'f1\'f2\'f0\'ee\'ea\'f3 \'e8 \'f6\'e5\'eb\'ee\'e5 \'f7\'e8\'f1\'eb\'ee");\par
+        return text + num.ToString();\par
+    \}\par
+\}\par
+public class Program\par
+\{\par
+    public static void Main(string[] args)\par
+    \{\par
+        Calculator calculator = new Calculator();\par
+        // \'c2\'fb\'e7\'ee\'e2 \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'f5 \'ef\'e5\'f0\'e5\'e3\'f0\'f3\'e6\'e5\'ed\'ed\'fb\'f5 \'ec\'e5\'f2\'ee\'e4\'ee\'e2 Add\par
+        int sum1 = calculator.Add(5, 10);  // \'c2\'fb\'e7\'ee\'e2\'e5\'f2 int Add(int a, int b)\par
+        Console.WriteLine($"\'d1\'f3\'ec\'ec\'e0 1: \{sum1\}");\par
+        int sum2 = calculator.Add(5, 10, 15); // \'c2\'fb\'e7\'ee\'e2\'e5\'f2 int Add(int a, int b, int c)\par
+        Console.WriteLine($"\'d1\'f3\'ec\'ec\'e0 2: \{sum2\}");\par
+        double sum3 = calculator.Add(2.5, 3.7); // \'c2\'fb\'e7\'ee\'e2\'e5\'f2 double Add(double a, double b)\par
+        Console.WriteLine($"\'d1\'f3\'ec\'ec\'e0 3: \{sum3\}");\par
+        string sum4 = calculator.Add("\'d0\'e5\'e7\'f3\'eb\'fc\'f2\'e0\'f2: ", 42); // \'c2\'fb\'e7\'ee\'e2\'e5\'f2 string Add(string text, int num)\par
+        Console.WriteLine($"\'d1\'f3\'ec\'ec\'e0 4: \{sum4\}");\par
+    \}\par
+\}\par
+\par
+(Generics \'e2 C# \f1\emdash  \f0\'fd\'f2\'ee \'ea\'ee\'ed\'f6\'e5\'ef\'f6\'e8\'ff, \'ea\'ee\'f2\'ee\'f0\'e0\'ff \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ea\'eb\'e0\'f1\'f1\'fb, \'ec\'e5\'f2\'ee\'e4\'fb, \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'fb \'e8 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'fb, \'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f9\'e8\'e5 \'f1 \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'ec\'e8 \'f2\'e8\'ef\'e0\'ec\'e8 \'e4\'e0\'ed\'ed\'fb\'f5 \'e1\'e5\'e7 \'f3\'ea\'e0\'e7\'e0\'ed\'e8\'ff \'f4\'e0\'ea\'f2\'e8\'f7\'e5\'f1\'ea\'ee\'e3\'ee \'f2\'e8\'ef\'e0 \'e4\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff \'ea\'ee\'e4\'e0. \'dd\'f2\'ee \'e4\'e5\'eb\'e0\'e5\'f2 \'ea\'ee\'e4 \'e1\'ee\'eb\'e5\'e5 \'e3\'e8\'e1\'ea\'e8\'ec, \'e1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'fb\'ec \'e8 \'ef\'ee\'e2\'f2\'ee\'f0\'ed\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'fb\'ec.\par
+\'cf\'f0\'e8\'ec\'e5\'f0 \'e1\'e0\'e7\'ee\'e2\'ee\'e3\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff:\par
+public class GenericList<T> \{\par
+    private List<T> list = new List<T>();\par
+    public void Add(T item) \{ list.Add(item); \}\par
+    public T Get(int index) \{ return list[index]; \}\par
+\})\par
+\par
+Generics \f1\emdash  \f0\'fd\'f2\'ee \'ec\'ee\'f9\'ed\'e0\'ff \'e2\'ee\'e7\'ec\'ee\'e6\'ed\'ee\'f1\'f2\'fc C#, \'ea\'ee\'f2\'ee\'f0\'e0\'ff \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ea\'eb\'e0\'f1\'f1\'fb, \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb, \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'fb \'e8 \'ec\'e5\'f2\'ee\'e4\'fb, \'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f9\'e8\'e5 \'f1 \'f0\'e0\'e7\'ed\'fb\'ec\'e8 \'f2\'e8\'ef\'e0\'ec\'e8 \'e4\'e0\'ed\'ed\'fb\'f5 \'e1\'e5\'e7 \'ef\'ee\'f2\'e5\'f0\'e8 \'e1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee\'f1\'f2\'e8 \'f2\'e8\'ef\'ee\'e2 \'e8 \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'e8.\par
+\'ce\'f1\'ed\'ee\'e2\'ed\'e0\'ff \'e8\'e4\'e5\'ff Generics \f1\emdash  \f0\'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e8\'e7\'ee\'e2\'e0\'f2\'fc \'f2\'e8\'ef\'fb. \'c2\'ec\'e5\'f1\'f2\'ee \'f2\'ee\'e3\'ee \'f7\'f2\'ee\'e1\'fb \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ee\'f2\'e4\'e5\'eb\'fc\'ed\'fb\'e5 \'e2\'e5\'f0\'f1\'e8\'e8 \'ea\'eb\'e0\'f1\'f1\'e0 \'e8\'eb\'e8 \'ec\'e5\'f2\'ee\'e4\'e0 \'e4\'eb\'ff \'ea\'e0\'e6\'e4\'ee\'e3\'ee \'f2\'e8\'ef\'e0 \'e4\'e0\'ed\'ed\'fb\'f5 (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, ListInt, ListString, ListFloat), \'e2\'fb \'f1\'ee\'e7\'e4\'e0\'e5\'f2\'e5 \'ee\'e4\'e8\'ed \'ee\'e1\'ee\'e1\'f9\'e5\'ed\'ed\'fb\'e9 \'ea\'eb\'e0\'f1\'f1 \'e8\'eb\'e8 \'ec\'e5\'f2\'ee\'e4, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ec\'ee\'e6\'e5\'f2 \'f0\'e0\'e1\'ee\'f2\'e0\'f2\'fc \'f1 \'eb\'fe\'e1\'fb\'ec \'f2\'e8\'ef\'ee\'ec, \'f3\'ea\'e0\'e7\'e0\'ed\'ed\'fb\'ec \'ea\'e0\'ea \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0 \'f2\'e8\'ef\'e0.\par
+\b\'cf\'f0\'e5\'e8\'ec\'f3\'f9\'e5\'f1\'f2\'e2\'e0 Generics:\b0\par
+\'c1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee\'f1\'f2\'fc \'f2\'e8\'ef\'ee\'e2: Generics \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'fe\'f2 \'e2\'fb\'ff\'e2\'e8\'f2\'fc \'ee\'f8\'e8\'e1\'ea\'e8 \'ed\'e5\'f1\'ee\'e2\'ec\'e5\'f1\'f2\'e8\'ec\'ee\'f1\'f2\'e8 \'f2\'e8\'ef\'ee\'e2 \'ed\'e0 \'fd\'f2\'e0\'ef\'e5 \'ea\'ee\'ec\'ef\'e8\'eb\'ff\'f6\'e8\'e8, \'e0 \'ed\'e5 \'e2\'ee \'e2\'f0\'e5\'ec\'ff \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff, \'f7\'f2\'ee \'f3\'ec\'e5\'ed\'fc\'f8\'e0\'e5\'f2 \'ea\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee \'ee\'f8\'e8\'e1\'ee\'ea \'e8 \'ef\'ee\'e2\'fb\'f8\'e0\'e5\'f2 \'ed\'e0\'e4\'e5\'e6\'ed\'ee\'f1\'f2\'fc \'ea\'ee\'e4\'e0.\par
+\'cf\'ee\'e2\'f2\'ee\'f0\'ed\'ee\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5 \'ea\'ee\'e4\'e0: \'c2\'fb \'ec\'ee\'e6\'e5\'f2\'e5 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ee\'e1\'ee\'e1\'f9\'e5\'ed\'ed\'fb\'e5 \'ea\'eb\'e0\'f1\'f1\'fb \'e8 \'ec\'e5\'f2\'ee\'e4\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ec\'ee\'e3\'f3\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc\'f1\'ff \'f1 \'f0\'e0\'e7\'ed\'fb\'ec\'e8 \'f2\'e8\'ef\'e0\'ec\'e8 \'e4\'e0\'ed\'ed\'fb\'f5, \'f7\'f2\'ee \'f3\'ec\'e5\'ed\'fc\'f8\'e0\'e5\'f2 \'e4\'f3\'e1\'eb\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5 \'ea\'ee\'e4\'e0.\par
+\'cf\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'fc: \'ce\'e1\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f2 \'ed\'e0 \'f3\'f0\'ee\'e2\'ed\'e5 \'ea\'ee\'ec\'ef\'e8\'eb\'ff\'f6\'e8\'e8 \'e8 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'fe\'f2 \'e8\'e7\'e1\'e5\'e6\'e0\'f2\'fc \ldblquote\'f3\'ef\'e0\'ea\'ee\'e2\'ea\'e8\rdblquote  (boxing) \'e8 \ldblquote\'f0\'e0\'f1\'ef\'e0\'ea\'ee\'e2\'ea\'e8\rdblquote  (unboxing) \'f2\'e8\'ef\'ee\'e2-\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e9, \'f7\'f2\'ee \'ef\'ee\'e2\'fb\'f8\'e0\'e5\'f2 \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'fc \'ea\'ee\'e4\'e0 \'ef\'ee \'f1\'f0\'e0\'e2\'ed\'e5\'ed\'e8\'fe \'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec, \'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, object.\par
+\'d7\'e8\'f2\'e0\'e5\'ec\'ee\'f1\'f2\'fc: \'ce\'e1\'ee\'e1\'f9\'e5\'ed\'e8\'ff \'e4\'e5\'eb\'e0\'fe\'f2 \'ea\'ee\'e4 \'e1\'ee\'eb\'e5\'e5 \'e2\'fb\'f0\'e0\'e7\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'ec \'e8 \'ef\'ee\'ed\'ff\'f2\'ed\'fb\'ec, \'f2\'e0\'ea \'ea\'e0\'ea \'ff\'e2\'ed\'ee \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'fe\'f2 \'f2\'e8\'ef\'fb \'e4\'e0\'ed\'ed\'fb\'f5, \'f1 \'ea\'ee\'f2\'ee\'f0\'fb\'ec\'e8 \'ee\'ed\'e8 \'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f2.\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0\'fb \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff Generics \'e2 C#\b0\par
+\b 1. \'ce\'e1\'ee\'e1\'f9\'e5\'ed\'ed\'fb\'e9 \'ea\'eb\'e0\'f1\'f1 List<T>:\b0\par
+List<T> \f1\emdash  \f0\'fd\'f2\'ee \'f1\'f2\'e0\'ed\'e4\'e0\'f0\'f2\'ed\'fb\'e9 \'ee\'e1\'ee\'e1\'f9\'e5\'ed\'ed\'fb\'e9 \'ea\'eb\'e0\'f1\'f1 \'e2 C#, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'e4\'e8\'ed\'e0\'ec\'e8\'f7\'e5\'f1\'ea\'e8\'e9 \'ec\'e0\'f1\'f1\'e8\'e2. \'c2\'fb \'ec\'ee\'e6\'e5\'f2\'e5 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'f1\'ef\'e8\'f1\'ea\'e8 \'f1 \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'e0\'ec\'e8 \'f0\'e0\'e7\'ed\'fb\'f5 \'f2\'e8\'ef\'ee\'e2, \'f3\'ea\'e0\'e7\'fb\'e2\'e0\'ff \'f2\'e8\'ef \'e2 \'f3\'e3\'eb\'ee\'e2\'fb\'f5 \'f1\'ea\'ee\'e1\'ea\'e0\'f5.\par
+using System;\par
+using System.Collections.Generic;\par
+public class Program\par
+\{\par
+    public static void Main(string[] args)\par
+    \{\par
+        // \'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'f1\'ef\'e8\'f1\'ea\'e0 \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'e5\'eb\par
+        List<int> numbers = new List<int>();\par
+        numbers.Add(10);\par
+        numbers.Add(20);\par
+        numbers.Add(30);\par
+        // \'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'f1\'ef\'e8\'f1\'ea\'e0 \'f1\'f2\'f0\'ee\'ea\par
+        List<string> names = new List<string>();\par
+        names.Add("Alice");\par
+        names.Add("Bob");\par
+        names.Add("Charlie");\par
+        // \'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'f1\'ef\'e8\'f1\'ea\'e0 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'ea\'eb\'e0\'f1\'f1\'e0 Person (\'ef\'f0\'e5\'e4\'ef\'ee\'eb\'ee\'e6\'e8\'ec, \'ee\'ed \'e5\'f1\'f2\'fc)\par
+        List<Person> people = new List<Person>();\par
+        people.Add(new Person \{ Name = "John", Age = 30 \});\par
+        people.Add(new Person \{ Name = "Mary", Age = 25 \});\par
+        // \'c2\'fb\'e2\'ee\'e4 \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'ee\'e2 \'f1\'ef\'e8\'f1\'ea\'ee\'e2\par
+        Console.WriteLine("\'d1\'ef\'e8\'f1\'ee\'ea \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'e5\'eb:");\par
+        foreach (int num in numbers) \{\par
+            Console.WriteLine(num);\par
+        \}\par
+         Console.WriteLine("\'d1\'ef\'e8\'f1\'ee\'ea \'e8\'ec\'e5\'ed:");\par
+        foreach (string name in names) \{\par
+             Console.WriteLine(name);\par
+        \}\par
+        Console.WriteLine("\'d1\'ef\'e8\'f1\'ee\'ea \'ef\'e5\'f0\'f1\'ee\'ed:");\par
+        foreach (Person person in people) \{\par
+             Console.WriteLine($"\{person.Name\} - \{person.Age\}");\par
+        \}\par
+    \}\par
+\}\par
+// \'cf\'f0\'e8\'ec\'e5\'f0 \'ea\'eb\'e0\'f1\'f1\'e0 Person\par
+public class Person\par
+\{\par
+    public string Name \{ get; set; \}\par
+    public int Age \{ get; set; \}\par
+\}\par
+\'c7\'e4\'e5\'f1\'fc List<T> \f1\emdash  \f0\'fd\'f2\'ee \'ee\'e1\'ee\'e1\'f9\'e5\'ed\'ed\'fb\'e9 \'ea\'eb\'e0\'f1\'f1, \'e3\'e4\'e5 T \'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'ec \'f2\'e8\'ef\'e0. \'c2\'fb \'ec\'ee\'e6\'e5\'f2\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc List<int>, List<string>, List<Person> \'e8 \'f2.\'e4.\par
+\b 2. \'ce\'e1\'ee\'e1\'f9\'e5\'ed\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4:\b0\par
+\'c2\'fb \'f2\'e0\'ea\'e6\'e5 \'ec\'ee\'e6\'e5\'f2\'e5 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ee\'e1\'ee\'e1\'f9\'e5\'ed\'ed\'fb\'e5 \'ec\'e5\'f2\'ee\'e4\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f2 \'f1 \'f0\'e0\'e7\'ed\'fb\'ec\'e8 \'f2\'e8\'ef\'e0\'ec\'e8 \'e4\'e0\'ed\'ed\'fb\'f5.\par
+public static class GenericMethods\par
+\{\par
+    // \'ce\'e1\'ee\'e1\'f9\'e5\'ed\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4 \'e4\'eb\'ff \'ee\'e1\'ec\'e5\'ed\'e0 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff\'ec\'e8 \'e4\'e2\'f3\'f5 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'f5\par
+    public static void Swap<T>(ref T a, ref T b)\par
+    \{\par
+        T temp = a;\par
+        a = b;\par
+        b = temp;\par
+    \}\par
+     // \'ce\'e1\'ee\'e1\'f9\'e5\'ed\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4 \'e4\'eb\'ff \'f1\'f0\'e0\'e2\'ed\'e5\'ed\'e8\'ff \'e4\'e2\'f3\'f5 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e9 (\'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec IComparable)\par
+     public static bool AreEqual<T>(T a, T b) where T : IComparable<T>\par
+     \{\par
+      return a.CompareTo(b) == 0;\par
+     \}\par
+\}\par
+public class Program\par
+\{\par
+    public static void Main(string[] args)\par
+    \{\par
+        int num1 = 10;\par
+        int num2 = 20;\par
+        Console.WriteLine($"\'c4\'ee \'f1\'e2\'e0\'ef\'e0: num1 = \{num1\}, num2 = \{num2\}");\par
+        GenericMethods.Swap(ref num1, ref num2);\par
+        Console.WriteLine($"\'cf\'ee\'f1\'eb\'e5 \'f1\'e2\'e0\'ef\'e0: num1 = \{num1\}, num2 = \{num2\}");\par
+        string str1 = "hello";\par
+        string str2 = "world";\par
+        Console.WriteLine($"\'c4\'ee \'f1\'e2\'e0\'ef\'e0: str1 = \{str1\}, str2 = \{str2\}");\par
+        GenericMethods.Swap(ref str1, ref str2);\par
+        Console.WriteLine($"\'cf\'ee\'f1\'eb\'e5 \'f1\'e2\'e0\'ef\'e0: str1 = \{str1\}, str2 = \{str2\}");\par
+       Console.WriteLine(GenericMethods.AreEqual(5, 5)); // \'e2\'fb\'e2\'e5\'e4\'e5\'f2 True\par
+       Console.WriteLine(GenericMethods.AreEqual("a", "b")); // \'e2\'fb\'e2\'e5\'e4\'e5\'f2 False\par
+    \}\par
+\}\par
+\'c7\'e4\'e5\'f1\'fc \'ec\'e5\'f2\'ee\'e4 Swap<T> \f1\emdash  \f0\'fd\'f2\'ee \'ee\'e1\'ee\'e1\'f9\'e5\'ed\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ec\'ee\'e6\'e5\'f2 \'ee\'e1\'ec\'e5\'ed\'ff\'f2\'fc \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'f5 \'eb\'fe\'e1\'ee\'e3\'ee \'f2\'e8\'ef\'e0 T.\par
+\b 3. \'ce\'e3\'f0\'e0\'ed\'e8\'f7\'e5\'ed\'e8\'ff \'ed\'e0 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb \'f2\'e8\'ef\'e0 (where):\b0\par
+\'c2\'fb \'ec\'ee\'e6\'e5\'f2\'e5 \'ed\'e0\'ea\'eb\'e0\'e4\'fb\'e2\'e0\'f2\'fc \'ee\'e3\'f0\'e0\'ed\'e8\'f7\'e5\'ed\'e8\'ff \'ed\'e0 \'f2\'e8\'ef, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ec\'ee\'e6\'e5\'f2 \'e1\'fb\'f2\'fc \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed \'ea\'e0\'ea \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0 \'f2\'e8\'ef\'e0, \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe \'ea\'eb\'fe\'f7\'e5\'e2\'ee\'e3\'ee \'f1\'eb\'ee\'e2\'e0 where.\par
+public class MyGenericClass<T> where T : class, new()\par
+\{\par
+    // \'c7\'e4\'e5\'f1\'fc T \'e4\'ee\'eb\'e6\'ed\'ee \'e1\'fb\'f2\'fc \'f1\'f1\'fb\'eb\'ee\'f7\'ed\'fb\'ec \'f2\'e8\'ef\'ee\'ec \'e8 \'e8\'ec\'e5\'f2\'fc \'ea\'ee\'ed\'f1\'f2\'f0\'f3\'ea\'f2\'ee\'f0 \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe\par
+    public T CreateObject()\par
+    \{\par
+        return new T();\par
+    \}\par
+\}\par
+// \'c4\'f0\'f3\'e3\'ee\'e9 \'ef\'f0\'e8\'ec\'e5\'f0 (\'ee\'e3\'f0\'e0\'ed\'e8\'f7\'e5\'ed\'e8\'e5 \'ed\'e0 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1)\par
+public class MyGenericProcessor<T> where T: IProcessor \{\par
+  public void Process(T item) \{\par
+    item.Process();\par
+  \}\par
+\}\par
+public interface IProcessor \{\par
+  void Process();\par
+\}\par
+public class ConcreteProcessor: IProcessor \{\par
+  public void Process()\{\par
+    Console.WriteLine("\'ce\'e1\'f0\'e0\'e1\'ee\'f2\'ea\'e0 ConcreteProcessor");\par
+  \}\par
+\}\par
+public class AnotherConcreteProcessor: IProcessor \{\par
+  public void Process()\{\par
+     Console.WriteLine("\'ce\'e1\'f0\'e0\'e1\'ee\'f2\'ea\'e0 AnotherConcreteProcessor");\par
+  \}\par
+\}\par
+public class Program\par
+\{\par
+   public static void Main(string[] args)\par
+    \{\par
+        MyGenericClass<Person> myObject = new MyGenericClass<Person>();\par
+        Person newPerson = myObject.CreateObject(); // \'d1\'ee\'e7\'e4\'e0\'f1\'f2 \'ed\'ee\'e2\'fb\'e9 Person()\par
+        Console.WriteLine(newPerson != null);\par
+        MyGenericProcessor<ConcreteProcessor> processor1 = new MyGenericProcessor<ConcreteProcessor>();\par
+        processor1.Process(new ConcreteProcessor());\par
+        MyGenericProcessor<AnotherConcreteProcessor> processor2 = new MyGenericProcessor<AnotherConcreteProcessor>();\par
+        processor2.Process(new AnotherConcreteProcessor());\par
+    \}\par
+\}\par
+\b\'c2 \'fd\'f2\'ee\'ec \'ef\'f0\'e8\'ec\'e5\'f0\'e5:\b0\par
+where T : class, new() \'ee\'e7\'ed\'e0\'f7\'e0\'e5\'f2, \'f7\'f2\'ee T \'e4\'ee\'eb\'e6\'ed\'ee \'e1\'fb\'f2\'fc \'f1\'f1\'fb\'eb\'ee\'f7\'ed\'fb\'ec \'f2\'e8\'ef\'ee\'ec \'e8 \'e8\'ec\'e5\'f2\'fc \'ea\'ee\'ed\'f1\'f2\'f0\'f3\'ea\'f2\'ee\'f0 \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe.\par
+where T: IProcessor \'ee\'e7\'ed\'e0\'f7\'e0\'e5\'f2, \'f7\'f2\'ee T \'e4\'ee\'eb\'e6\'e5\'ed \'f0\'e5\'e0\'eb\'e8\'e7\'ee\'e2\'fb\'e2\'e0\'f2\'fc \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 IProcessor.\par
+\f2\lang1033 ___\par
+\b\f0\lang1049\'cf\'e5\'f0\'e5\'e3\'f0\'f3\'e7\'ea\'e0 \'ec\'e5\'f2\'ee\'e4\'ee\'e2 (Method Overloading)\b0\par
+\b\'cf\'e5\'f0\'e5\'e3\'f0\'f3\'e7\'ea\'e0 \'ec\'e5\'f2\'ee\'e4\'ee\'e2 \b0\f1\emdash  \f0\'fd\'f2\'ee \'ec\'e5\'f5\'e0\'ed\'e8\'e7\'ec, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'ee \'ec\'e5\'f2\'ee\'e4\'ee\'e2 \'f1 \'ee\'e4\'e8\'ed\'e0\'ea\'ee\'e2\'fb\'ec \'e8\'ec\'e5\'ed\'e5\'ec, \'ed\'ee \'f1 \'f0\'e0\'e7\'ed\'fb\'ec\'e8 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0\'ec\'e8 (\'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'e5 \'f2\'e8\'ef\'fb, \'ea\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee \'e8\'eb\'e8 \'ef\'ee\'f0\'ff\'e4\'ee\'ea \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2) \'e2 \'ee\'e4\'ed\'ee\'ec \'ea\'eb\'e0\'f1\'f1\'e5. \'dd\'f2\'ee \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'ee\'e4\'ed\'ee \'e8 \'f2\'ee \'e6\'e5 \'e8\'ec\'ff \'ec\'e5\'f2\'ee\'e4\'e0 \'e4\'eb\'ff \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'f5 \'e7\'e0\'e4\'e0\'f7 \'e2 \'e7\'e0\'e2\'e8\'f1\'e8\'ec\'ee\'f1\'f2\'e8 \'ee\'f2 \'ef\'e5\'f0\'e5\'e4\'e0\'ed\'ed\'fb\'f5 \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2\'ee\'e2.\par
+\b\'cf\'f0\'e8\'ec\'e5\'ed\'e5\'ed\'e8\'e5\b0\par
+\'cf\'e5\'f0\'e5\'e3\'f0\'f3\'e7\'ea\'e0 \'ec\'e5\'f2\'ee\'e4\'ee\'e2 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'e4\'eb\'ff \'ef\'ee\'e2\'fb\'f8\'e5\'ed\'e8\'ff \'f7\'e8\'f2\'e0\'e5\'ec\'ee\'f1\'f2\'e8 \'e8 \'f3\'e4\'ee\'e1\'f1\'f2\'e2\'e0 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff \'ea\'ee\'e4\'e0. \'ce\'ed\'e0 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'f7\'e8\'ea\'e0\'ec \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'e1\'ee\'eb\'e5\'e5 \'e3\'e8\'e1\'ea\'e8\'e5 \'e8 \'ef\'ee\'ed\'ff\'f2\'ed\'fb\'e5 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'fb \'e4\'eb\'ff \'f0\'e0\'e1\'ee\'f2\'fb \'f1 \'ea\'eb\'e0\'f1\'f1\'e0\'ec\'e8 \'e8 \'ec\'e5\'f2\'ee\'e4\'e0\'ec\'e8.\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0\'fb \'ed\'e0 \'ff\'e7\'fb\'ea\'e5 C#\par
+\'cf\'e5\'f0\'e5\'e3\'f0\'f3\'e7\'ea\'e0 \'ec\'e5\'f2\'ee\'e4\'e0 Add\par
+\b0 public class MathOperations\par
+\{\par
+    // \'cc\'e5\'f2\'ee\'e4 \'e4\'eb\'ff \'f1\'eb\'ee\'e6\'e5\'ed\'e8\'ff \'e4\'e2\'f3\'f5 \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'e5\'eb\par
+    public int Add(int a, int b)\par
+    \{\par
+        return a + b;\par
+    \}\par
+    // \'cc\'e5\'f2\'ee\'e4 \'e4\'eb\'ff \'f1\'eb\'ee\'e6\'e5\'ed\'e8\'ff \'e4\'e2\'f3\'f5 \'f7\'e8\'f1\'e5\'eb \'f1 \'ef\'eb\'e0\'e2\'e0\'fe\'f9\'e5\'e9 \'e7\'e0\'ef\'ff\'f2\'ee\'e9\par
+    public double Add(double a, double b)\par
+    \{\par
+        return a + b;\par
+    \}\par
+    // \'cc\'e5\'f2\'ee\'e4 \'e4\'eb\'ff \'f1\'eb\'ee\'e6\'e5\'ed\'e8\'ff \'f2\'f0\'e5\'f5 \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'e5\'eb\par
+    public int Add(int a, int b, int c)\par
+    \{\par
+        return a + b + c;\par
+    \}\par
+\}\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+        MathOperations math = new MathOperations();\par
+        Console.WriteLine(math.Add(5, 10)); // Output: 15\par
+        Console.WriteLine(math.Add(5.5, 10.5)); // Output: 16\par
+        Console.WriteLine(math.Add(1, 2, 3)); // Output: 6\par
+    \}\par
+\par
+\b Generics \'e2 C#\b0\par
+Generics \f1\emdash  \f0\'fd\'f2\'ee \'ec\'e5\'f5\'e0\'ed\'e8\'e7\'ec \'e2 C#, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ea\'eb\'e0\'f1\'f1\'fb, \'ec\'e5\'f2\'ee\'e4\'fb \'e8 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'f1 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0\'ec\'e8 \'f2\'e8\'ef\'e0. \'dd\'f2\'ee \'ef\'ee\'ec\'ee\'e3\'e0\'e5\'f2 \'ef\'e8\'f1\'e0\'f2\'fc \'e1\'ee\'eb\'e5\'e5 \'e3\'e8\'e1\'ea\'e8\'e9 \'e8 \'ef\'ee\'e2\'f2\'ee\'f0\'ed\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'fb\'e9 \'ea\'ee\'e4, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ec\'ee\'e6\'e5\'f2 \'f0\'e0\'e1\'ee\'f2\'e0\'f2\'fc \'f1 \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'ec\'e8 \'f2\'e8\'ef\'e0\'ec\'e8 \'e4\'e0\'ed\'ed\'fb\'f5 \'e1\'e5\'e7 \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee\'f1\'f2\'e8 \'e4\'f3\'e1\'eb\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'ea\'ee\'e4\'e0.\par
+\b\'cf\'f0\'e5\'e8\'ec\'f3\'f9\'e5\'f1\'f2\'e2\'e0 Generics:\b0\par
+\'d2\'e8\'ef\'ee\'e1\'e5\'e7\'ee\'ef\'e0\'f1\'ed\'ee\'f1\'f2\'fc: Generics \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'fe\'f2 \'ee\'e1\'ed\'e0\'f0\'f3\'e6\'e8\'e2\'e0\'f2\'fc \'ee\'f8\'e8\'e1\'ea\'e8 \'f2\'e8\'ef\'ee\'e2 \'ed\'e0 \'fd\'f2\'e0\'ef\'e5 \'ea\'ee\'ec\'ef\'e8\'eb\'ff\'f6\'e8\'e8, \'f7\'f2\'ee \'e4\'e5\'eb\'e0\'e5\'f2 \'ea\'ee\'e4 \'e1\'ee\'eb\'e5\'e5 \'ed\'e0\'e4\'e5\'e6\'ed\'fb\'ec.\par
+\'cf\'ee\'e2\'f2\'ee\'f0\'ed\'ee\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5 \'ea\'ee\'e4\'e0: Generics \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'fe\'f2 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'f3\'ed\'e8\'e2\'e5\'f0\'f1\'e0\'eb\'fc\'ed\'fb\'e5 \'ea\'eb\'e0\'f1\'f1\'fb \'e8 \'ec\'e5\'f2\'ee\'e4\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ec\'ee\'e3\'f3\'f2 \'f0\'e0\'e1\'ee\'f2\'e0\'f2\'fc \'f1 \'eb\'fe\'e1\'fb\'ec\'e8 \'f2\'e8\'ef\'e0\'ec\'e8 \'e4\'e0\'ed\'ed\'fb\'f5.\par
+\'cf\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'fc: Generics \'f3\'f1\'f2\'f0\'e0\'ed\'ff\'fe\'f2 \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee\'f1\'f2\'fc \'e2 \'e1\'ee\'ea\'f1\'e5 \'e8 \'e0\'ed\'e1\'ee\'ea\'f1\'e5 (boxing/unboxing), \'f7\'f2\'ee \'f3\'eb\'f3\'f7\'f8\'e0\'e5\'f2 \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'fc.\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0\'fb \'ed\'e0 \'ff\'e7\'fb\'ea\'e5 C#\b0\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0 1: Generic \'ea\'eb\'e0\'f1\'f1\b0\par
+public class GenericList<T>\par
+\{\par
+    private T[] items;\par
+    private int count;\par
+    public GenericList(int capacity)\par
+    \{\par
+        items = new T[capacity];\par
+        count = 0;\par
+    \}\par
+    public void Add(T item)\par
+    \{\par
+        if (count < items.Length)\par
+        \{\par
+            items[count] = item;\par
+            count++;\par
+        \}\par
+    \}\par
+    public T Get(int index)\par
+    \{\par
+        if (index >= 0 && index < count)\par
+        \{\par
+            return items[index];\par
+        \}\par
+        throw new IndexOutOfRangeException();\par
+    \}\par
+\}\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+        GenericList<int> intList = new GenericList<int>(5);\par
+        intList.Add(1);\par
+        intList.Add(2);\par
+        Console.WriteLine(intList.Get(0)); // Output: 1\par
+        GenericList<string> stringList = new GenericList<string>(5);\par
+        stringList.Add("Hello");\par
+        stringList.Add("World");\par
+        Console.WriteLine(stringList.Get(1)); // Output: World\par
+    \}\par
+\}\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0 2: Generic \'ec\'e5\'f2\'ee\'e4\b0\par
+public class Utilities\par
+\{\par
+    public static void Swap<T>(ref T a, ref T b)\par
+    \{\par
+        T temp = a;\par
+        a = b;\par
+        b = temp;\par
+    \}\par
+\}\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+        int x = 1, y = 2;\par
+        Utilities.Swap(ref x, ref y);\par
+        Console.WriteLine($"x = \{x\}, y = \{y\}"); // Output: x = 2, y = 1\par
+        string str1 = "Hello", str2 = "World";\par
+        Utilities.Swap(ref str1, ref str2);\par
+        Console.WriteLine($"str1 = \{str1\}, str2 = \{str2\}"); // Output: str1 = World, str2 = Hello\par
+    \}\par
+\}\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0 3: Generic \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\b0\par
+public interface IRepository<T>\par
+\{\par
+    void Add(T item);\par
+    T Get(int id);\par
+\}\par
+public class Repository<T> : IRepository<T>\par
+\{\par
+    private List<T> items = new List<T>();\par
+\par
+    public void Add(T item)\par
+    \{\par
+        items.Add(item);\par
+    \}\par
+    public T Get(int id)\par
+    \{\par
+        if (id >= 0 && id < items.Count)\par
+        \{\par
+            return items[id];\par
+        \}\par
+        throw new IndexOutOfRangeException();\par
+    \}\par
+\}\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+        IRepository<int> intRepository = new Repository<int>();\par
+        intRepository.Add(1);\par
+        intRepository.Add(2);\par
+        Console.WriteLine(intRepository.Get(0)); // Output: 1\par
+        IRepository<string> stringRepository = new Repository<string>();\par
+        stringRepository.Add("Hello");\par
+        stringRepository.Add("World");\par
+        Console.WriteLine(stringRepository.Get(1)); // Output: World\par
+    \}\par
+\}\b\i\f2\lang9\par
+}
+ 

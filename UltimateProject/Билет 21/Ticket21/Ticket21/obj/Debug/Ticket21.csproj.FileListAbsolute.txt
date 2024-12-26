@@ -1,0 +1,7 @@
+C:\Users\KING\Desktop\Билеты РПМ\Билет 21\Ticket21\Ticket21\bin\Debug\Ticket21.exe.config
+C:\Users\KING\Desktop\Билеты РПМ\Билет 21\Ticket21\Ticket21\bin\Debug\Ticket21.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 21\Ticket21\Ticket21\bin\Debug\Ticket21.pdb
+C:\Users\KING\Desktop\Билеты РПМ\Билет 21\Ticket21\Ticket21\obj\Debug\Ticket21.csproj.AssemblyReference.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 21\Ticket21\Ticket21\obj\Debug\Ticket21.csproj.CoreCompileInputs.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 21\Ticket21\Ticket21\obj\Debug\Ticket21.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 21\Ticket21\Ticket21\obj\Debug\Ticket21.pdb

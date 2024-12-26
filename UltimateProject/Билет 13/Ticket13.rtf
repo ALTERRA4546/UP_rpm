@@ -1,0 +1,316 @@
+{\rtf1\ansi\ansicpg1251\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset204 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\i\f0\fs22\lang1049\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb: \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'e5, \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb, \'ef\'f0\'e8\'ec\'e5\'f0\'fb.\par
+\'cc\'e5\'f2\'ee\'e4\'fb \'e2 C#: \'ee\'e1\'fa\'ff\'e2\'eb\'e5\'ed\'e8\'e5, \'e2\'fb\'e7\'ee\'e2, \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'e0 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2.\par
+\'d1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 \'fd\'eb\'e5\'ec\'e5\'ed\'f2 \'f3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'ff (\'ed\'e0\'ef\'f0\'e8\'ec\'e5\'f0, \'f2\'e5\'ea\'f1\'f2\'ee\'e2\'fb\'e9 \'e1\'eb\'ee\'ea) \'e8 \'ea\'ed\'ee\'ef\'ea\'f3. \'cf\'f0\'e8 \'ed\'e0\'e6\'e0\'f2\'e8\'e8 \'ed\'e0 \'ea\'ed\'ee\'ef\'ea\'f3 \'fd\'eb\'e5\'ec\'e5\'ed\'f2 \'e4\'ee\'eb\'e6\'e5\'ed \'ef\'eb\'e0\'e2\'ed\'ee \'ef\'ee\'ff\'e2\'eb\'ff\'f2\'fc\'f1\'ff, \'e5\'f1\'eb\'e8 \'ee\'ed \'f1\'ea\'f0\'fb\'f2, \'e8 \'ef\'eb\'e0\'e2\'ed\'ee \'e8\'f1\'f7\'e5\'e7\'e0\'f2\'fc, \'e5\'f1\'eb\'e8 \'ee\'ed \'e2\'e8\'e4\'e8\'ec. \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e9\'f2\'e5 DoubleAnimation \'e8 \'f1\'e2\'ee\'e9\'f1\'f2\'e2\'ee Opacity.\par
+\par
+\b0\i0\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'e0 \'e2 C# - \'fd\'f2\'ee \'f2\'e8\'ef \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff (value type), \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ee\'e1\'fa\'e5\'e4\'e8\'ed\'ff\'f2\'fc \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'ee \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'f5 \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'f5 \'f2\'e8\'ef\'ee\'e2 \'ef\'ee\'e4 \'ee\'e4\'ed\'e8\'ec \'e8\'ec\'e5\'ed\'e5\'ec. \'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'ef\'ee\'f5\'ee\'e6\'e8 \'ed\'e0 \'ea\'eb\'e0\'f1\'f1\'fb, \'ed\'ee \'e8\'ec\'e5\'fe\'f2 \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'ee \'e2\'e0\'e6\'ed\'fb\'f5 \'ee\'f2\'eb\'e8\'f7\'e8\'e9:\par
+\'d2\'e8\'ef \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff: \'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'ff\'e2\'eb\'ff\'fe\'f2\'f1\'ff \'f2\'e8\'ef\'e0\'ec\'e8 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff, \'e0 \'ed\'e5 \'f1\'f1\'fb\'eb\'ee\'f7\'ed\'fb\'ec\'e8 \'f2\'e8\'ef\'e0\'ec\'e8 (\'ea\'e0\'ea \'ea\'eb\'e0\'f1\'f1\'fb). \'dd\'f2\'ee \'ee\'e7\'ed\'e0\'f7\'e0\'e5\'f2, \'f7\'f2\'ee \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'ed\'e0\'ef\'f0\'ff\'ec\'f3\'fe \'f5\'f0\'e0\'ed\'e8\'f2 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5, \'e0 \'ed\'e5 \'f1\'f1\'fb\'eb\'ea\'f3 \'ed\'e0 \'ee\'e1\'fa\'e5\'ea\'f2 \'e2 \'ea\'f3\'f7\'e5.\par
+\'d5\'f0\'e0\'ed\'e5\'ed\'e8\'e5 \'e2 \'f1\'f2\'e5\'ea\'e5: \'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'ee\'e1\'fb\'f7\'ed\'ee \'f5\'f0\'e0\'ed\'ff\'f2\'f1\'ff \'e2 \'f1\'f2\'e5\'ea\'e5, \'e0 \'ed\'e5 \'e2 \'ea\'f3\'f7\'e5 (heap). \'dd\'f2\'ee \'ec\'ee\'e6\'e5\'f2 \'f1\'e4\'e5\'eb\'e0\'f2\'fc \'e8\'f5 \'e1\'ee\'eb\'e5\'e5 \'fd\'f4\'f4\'e5\'ea\'f2\'e8\'e2\'ed\'fb\'ec\'e8 \'f1 \'f2\'ee\'f7\'ea\'e8 \'e7\'f0\'e5\'ed\'e8\'ff \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'e8 \'e4\'eb\'ff \'ed\'e5\'e1\'ee\'eb\'fc\'f8\'e8\'f5 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0, \'f2\'e0\'ea \'ea\'e0\'ea \'e4\'ee\'f1\'f2\'f3\'ef \'ea \'f1\'f2\'e5\'ea\'f3 \'e1\'fb\'f1\'f2\'f0\'e5\'e5, \'f7\'e5\'ec \'ea \'ea\'f3\'f7\'e5.\par
+\'ce\'e3\'f0\'e0\'ed\'e8\'f7\'e5\'ed\'e8\'ff: \'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'e8\'ec\'e5\'fe\'f2 \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ee\'e3\'f0\'e0\'ed\'e8\'f7\'e5\'ed\'e8\'ff \'ef\'ee \'f1\'f0\'e0\'e2\'ed\'e5\'ed\'e8\'fe \'f1 \'ea\'eb\'e0\'f1\'f1\'e0\'ec\'e8:\par
+\'cd\'e5 \'ec\'ee\'e3\'f3\'f2 \'e8\'ec\'e5\'f2\'fc \'ff\'e2\'ed\'fb\'e9 \'ea\'ee\'ed\'f1\'f2\'f0\'f3\'ea\'f2\'ee\'f0 \'e1\'e5\'e7 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2.\par
+\'cd\'e5 \'ef\'ee\'e4\'e4\'e5\'f0\'e6\'e8\'e2\'e0\'fe\'f2 \'ed\'e0\'f1\'eb\'e5\'e4\'ee\'e2\'e0\'ed\'e8\'e5.\par
+\'cd\'e5 \'ec\'ee\'e3\'f3\'f2 \'e1\'fb\'f2\'fc \'e0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'ec\'e8.\par
+\'cd\'e5 \'ec\'ee\'e3\'f3\'f2 \'e8\'ec\'e5\'f2\'fc \'f4\'e8\'ed\'e0\'eb\'e8\'e7\'e0\'f2\'ee\'f0\'fb (\'e4\'e5\'f1\'f2\'f0\'f3\'ea\'f2\'ee\'f0\'fb).\par
+\'c8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'fe\'f2\'f1\'ff \'e4\'eb\'ff: \'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb, \'ea\'e0\'ea \'ef\'f0\'e0\'e2\'e8\'eb\'ee, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'fe\'f2\'f1\'ff \'e4\'eb\'ff \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'ed\'e5\'e1\'ee\'eb\'fc\'f8\'e8\'f5, \'ef\'f0\'ee\'f1\'f2\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ed\'e5 \'f2\'f0\'e5\'e1\'f3\'fe\'f2 \'f1\'eb\'ee\'e6\'ed\'ee\'e3\'ee \'ef\'ee\'e2\'e5\'e4\'e5\'ed\'e8\'ff \'e8 \'ed\'e5 \'e1\'f3\'e4\'f3\'f2 \'f7\'e0\'f1\'f2\'ee \'e8\'e7\'ec\'e5\'ed\'ff\'f2\'fc\'f1\'ff.\par
+\b\'ce\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'e5 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb\b0\par
+\'c4\'eb\'ff \'ee\'e1\'fa\'ff\'e2\'eb\'e5\'ed\'e8\'ff \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff \'ea\'eb\'fe\'f7\'e5\'e2\'ee\'e5 \'f1\'eb\'ee\'e2\'ee struct, \'e7\'e0 \'ea\'ee\'f2\'ee\'f0\'fb\'ec \'f1\'eb\'e5\'e4\'f3\'e5\'f2 \'e8\'ec\'ff \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'e8 \'e1\'eb\'ee\'ea \'ea\'ee\'e4\'e0 \'e2 \'f4\'e8\'e3\'f3\'f0\'ed\'fb\'f5 \'f1\'ea\'ee\'e1\'ea\'e0\'f5, \'f1\'ee\'e4\'e5\'f0\'e6\'e0\'f9\'e8\'e9 \'ef\'ee\'eb\'ff \'e8, \'e2\'ee\'e7\'ec\'ee\'e6\'ed\'ee, \'ec\'e5\'f2\'ee\'e4\'fb.\par
+\b\'d1\'e8\'ed\'f2\'e0\'ea\'f1\'e8\'f1:\b0\par
+struct \'c8\'ec\'ff\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb\par
+\{\par
+    // \'cf\'ee\'eb\'ff (\'e4\'e0\'ed\'ed\'fb\'e5)\par
+    public \'f2\'e8\'ef_\'e4\'e0\'ed\'ed\'fb\'f5 \'ef\'ee\'eb\'e51;\par
+    public \'f2\'e8\'ef_\'e4\'e0\'ed\'ed\'fb\'f5 \'ef\'ee\'eb\'e52;\par
+    // \'ca\'ee\'ed\'f1\'f2\'f0\'f3\'ea\'f2\'ee\'f0\'fb\par
+    public \'c8\'ec\'ff\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb(\'f2\'e8\'ef_\'e4\'e0\'ed\'ed\'fb\'f5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f01, \'f2\'e8\'ef_\'e4\'e0\'ed\'ed\'fb\'f5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f02)\par
+    \{\par
+        \'ef\'ee\'eb\'e51 = \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f01;\par
+        \'ef\'ee\'eb\'e52 = \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f02;\par
+    \}\par
+    // \'cc\'e5\'f2\'ee\'e4\'fb (\'ee\'ef\'f6\'e8\'ee\'ed\'e0\'eb\'fc\'ed\'ee)\par
+    public void \'cc\'e5\'f2\'ee\'e4()\par
+    \{\par
+        //...\par
+    \}\par
+\}\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0\'fb \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'ff \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\b0\par
+// \'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'e0 \'e4\'eb\'ff \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'f2\'ee\'f7\'ea\'e8 \'e2 2D \'ef\'f0\'ee\'f1\'f2\'f0\'e0\'ed\'f1\'f2\'e2\'e5\par
+struct Point\par
+\{\par
+    public int X;\par
+    public int Y;\par
+    public Point(int x, int y)\par
+    \{\par
+        X = x;\par
+        Y = y;\par
+    \}\par
+    public void Print()\par
+    \{\par
+        Console.WriteLine($"Point: (\{X\}, \{Y\})");\par
+    \}\par
+\}\par
+// \'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'e0 \'e4\'eb\'ff \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'f6\'e2\'e5\'f2\'e0 \'e2 \'f4\'ee\'f0\'ec\'e0\'f2\'e5 RGB\par
+struct Color\par
+\{\par
+    public byte Red;\par
+    public byte Green;\par
+    public byte Blue;\par
+    public Color(byte red, byte green, byte blue)\par
+    \{\par
+        Red = red;\par
+        Green = green;\par
+        Blue = blue;\par
+    \}\par
+\}\par
+\par
+\f1\lang1033 (\b\f0\lang1049\'ce\'e1\'fa\'ff\'e2\'eb\'e5\'ed\'e8\'e5 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb:\b0\f1\lang1033\par
+public struct Point\par
+\{\par
+    public int X;\par
+    public int Y;\par
+\par
+    public Point(int x, int y)\par
+    \{\par
+        X = x;\par
+        Y = y;\par
+    \}\par
+\par
+    public void Display()\par
+    \{\par
+        Console.WriteLine($"Point: (\{X\}, \{Y\})");\par
+    \}\par
+\}\par
+\b\f0\lang1049\'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'fd\'ea\'e7\'e5\'ec\'ef\'eb\'ff\'f0\'e0 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb:\b0\f1\lang1033\par
+Point p1 = new Point(10, 20);\par
+p1.Display(); // \f0\lang1049\'c2\'fb\'e2\'ee\'e4: Point: (10, 20)\par
+Point p2;\par
+p2.X = 30;\par
+p2.Y = 40;\par
+p2.Display(); // \'c2\'fb\'e2\'ee\'e4: Point: (30, 40)\f1\lang1033 )\par
+\par
+\f0\lang1049\'c2 C#, \'ec\'e5\'f2\'ee\'e4 \f2\emdash  \f0\'fd\'f2\'ee \'e1\'eb\'ee\'ea \'ea\'ee\'e4\'e0, \'f1\'ee\'e4\'e5\'f0\'e6\'e0\'f9\'e8\'e9 \'ef\'ee\'f1\'eb\'e5\'e4\'ee\'e2\'e0\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'fc \'e8\'ed\'f1\'f2\'f0\'f3\'ea\'f6\'e8\'e9, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'fe\'f2 \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'ed\'ee\'e5 \'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5. \'cc\'e5\'f2\'ee\'e4\'fb \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'fe\'f2:\par
+\'d0\'e0\'e7\'e1\'e8\'f2\'fc \'f1\'eb\'ee\'e6\'ed\'f3\'fe \'e7\'e0\'e4\'e0\'f7\'f3 \'ed\'e0 \'e1\'ee\'eb\'e5\'e5 \'ec\'e5\'eb\'ea\'e8\'e5, \'f3\'ef\'f0\'e0\'e2\'eb\'ff\'e5\'ec\'fb\'e5 \'f7\'e0\'f1\'f2\'e8.\par
+\'c8\'e7\'e1\'e5\'e6\'e0\'f2\'fc \'e4\'f3\'e1\'eb\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'ea\'ee\'e4\'e0, \'ef\'e5\'f0\'e5\'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'ff \'eb\'ee\'e3\'e8\'ea\'f3 \'e2 \'f0\'e0\'e7\'ed\'fb\'f5 \'f7\'e0\'f1\'f2\'ff\'f5 \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'fb.\par
+\'d3\'eb\'f3\'f7\'f8\'e8\'f2\'fc \'f7\'e8\'f2\'e0\'e5\'ec\'ee\'f1\'f2\'fc \'e8 \'ee\'f0\'e3\'e0\'ed\'e8\'e7\'e0\'f6\'e8\'fe \'ea\'ee\'e4\'e0.\par
+1. \'ce\'e1\'fa\'ff\'e2\'eb\'e5\'ed\'e8\'e5 \'ec\'e5\'f2\'ee\'e4\'e0\par
+\b\'ce\'e1\'f9\'e8\'e9 \'f1\'e8\'ed\'f2\'e0\'ea\'f1\'e8\'f1 \'ee\'e1\'fa\'ff\'e2\'eb\'e5\'ed\'e8\'ff \'ec\'e5\'f2\'ee\'e4\'e0 \'e2 C# \'e2\'fb\'e3\'eb\'ff\'e4\'e8\'f2 \'f2\'e0\'ea:\b0\par
+<\'ec\'ee\'e4\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0_\'e4\'ee\'f1\'f2\'f3\'ef\'e0> <\'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'e5\'ec\'fb\'e9_\'f2\'e8\'ef> <\'e8\'ec\'ff_\'ec\'e5\'f2\'ee\'e4\'e0>(<\'f1\'ef\'e8\'f1\'ee\'ea_\'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2>)\par
+\{\par
+  // \'d2\'e5\'eb\'ee \'ec\'e5\'f2\'ee\'e4\'e0 - \'e8\'ed\'f1\'f2\'f0\'f3\'ea\'f6\'e8\'e8\par
+  // ...\par
+  return <\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5>;  // \'c5\'f1\'eb\'e8 \'ec\'e5\'f2\'ee\'e4 \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'e5\'f2 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5\par
+\}\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0\'fb \'ee\'e1\'fa\'ff\'e2\'eb\'e5\'ed\'e8\'ff \'ec\'e5\'f2\'ee\'e4\'ee\'e2:\b0\par
+// \'cc\'e5\'f2\'ee\'e4 \'e1\'e5\'e7 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2 \'e8 \'e1\'e5\'e7 \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'e5\'ec\'ee\'e3\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff\par
+public void PrintHello()\par
+\{\par
+  Console.WriteLine("Hello!");\par
+\}\par
+// \'cc\'e5\'f2\'ee\'e4 \'f1 \'ee\'e4\'ed\'e8\'ec \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'ec (int) \'e8 \'e1\'e5\'e7 \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'e5\'ec\'ee\'e3\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff\par
+public void PrintNumber(int number)\par
+\{\par
+  Console.WriteLine("Number: " + number);\par
+\}\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0\'fb \'e2\'fb\'e7\'ee\'e2\'e0 \'ec\'e5\'f2\'ee\'e4\'ee\'e2:\b0\par
+public class MyClass\par
+\{\par
+   public void PrintHello()\par
+    \{\par
+      Console.WriteLine("Hello!");\par
+    \}\par
+    public void PrintNumber(int number)\par
+    \{\par
+      Console.WriteLine("Number: " + number);\par
+    \}\par
+    public int Add(int a, int b)\par
+    \{\par
+      int sum = a + b;\par
+      return sum;\par
+    \}\par
+    public string GetGreeting(string name)\par
+    \{\par
+      return $"Hello, \{name\}!";\par
+    \}\par
+\}\par
+public class Program\par
+\{\par
+  public static void Main(string[] args)\par
+  \{\par
+        MyClass myObject = new MyClass();\par
+    // \'c2\'fb\'e7\'ee\'e2 \'ec\'e5\'f2\'ee\'e4\'e0 \'e1\'e5\'e7 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2\par
+    myObject.PrintHello();  // \'c2\'fb\'e2\'e5\'e4\'e5\'f2 "Hello!"\par
+    // \'c2\'fb\'e7\'ee\'e2 \'ec\'e5\'f2\'ee\'e4\'e0 \'f1 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'ec\par
+    myObject.PrintNumber(10);  // \'c2\'fb\'e2\'e5\'e4\'e5\'f2 "Number: 10"\par
+    // \'c2\'fb\'e7\'ee\'e2 \'ec\'e5\'f2\'ee\'e4\'e0 \'f1 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0\'ec\'e8 \'e8 \'f1\'ee\'f5\'f0\'e0\'ed\'e5\'ed\'e8\'e5 \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'e5\'ec\'ee\'e3\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff\par
+    int result = myObject.Add(5, 3);\par
+    Console.WriteLine("Sum: " + result); // \'c2\'fb\'e2\'e5\'e4\'e5\'f2 "Sum: 8"\par
+    // \'c2\'fb\'e7\'ee\'e2 \'ec\'e5\'f2\'ee\'e4\'e0, \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'fe\'f9\'e5\'e3\'ee \'f1\'f2\'f0\'ee\'ea\'f3\par
+     string greeting = myObject.GetGreeting("Alice");\par
+     Console.WriteLine(greeting); // \'c2\'fb\'e2\'e5\'e4\'e5\'f2 "Hello, Alice!"\par
+  \}\par
+\}\par
+\b\'cf\'e5\'f0\'e5\'e4\'e0\'f7\'e0 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2\b0\par
+\'ca\'ee\'e3\'e4\'e0 \'e2\'fb \'e2\'fb\'e7\'fb\'e2\'e0\'e5\'f2\'e5 \'ec\'e5\'f2\'ee\'e4, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e8\'ec\'e5\'e5\'f2 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb, \'e2\'fb \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2\'e5 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff \'e2 \'ec\'e5\'f2\'ee\'e4. \'c2 C# \'e5\'f1\'f2\'fc \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'ee \'f1\'ef\'ee\'f1\'ee\'e1\'ee\'e2 \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'e8 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2:\par
+\b\'cf\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'fe (Value)\b0 : \'d1\'ee\'e7\'e4\'e0\'e5\'f2\'f1\'ff \'ea\'ee\'ef\'e8\'ff \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff, \'ea\'ee\'f2\'ee\'f0\'ee\'e5 \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2\'f1\'ff \'e2 \'ec\'e5\'f2\'ee\'e4. \'c8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff, \'e2\'ed\'e5\'f1\'e5\'ed\'ed\'fb\'e5 \'e2\'ed\'f3\'f2\'f0\'e8 \'ec\'e5\'f2\'ee\'e4\'e0, \'ed\'e5 \'e2\'eb\'e8\'ff\'fe\'f2 \'ed\'e0 \'ee\'f0\'e8\'e3\'e8\'ed\'e0\'eb\'fc\'ed\'f3\'fe \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'f3\'fe. \'dd\'f2\'ee \'ef\'ee\'e2\'e5\'e4\'e5\'ed\'e8\'e5 \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'e4\'eb\'ff \'ef\'f0\'ee\'f1\'f2\'fb\'f5 \'f2\'e8\'ef\'ee\'e2 (int, double, bool \'e8 \'f2.\'e4.).\par
+void ModifyNumber(int num)\par
+\{\par
+  num = num * 2; // \'c8\'e7\'ec\'e5\'ed\'ff\'e5\'f2\'f1\'ff \'ea\'ee\'ef\'e8\'ff num\par
+  Console.WriteLine("In method: " + num); // \'c2\'fb\'e2\'e5\'e4\'e5\'f2 20\par
+\}\par
+int number = 10;\par
+ModifyNumber(number); // number \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2\'f1\'ff \'ef\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'fe\par
+Console.WriteLine("After method: " + number); // \'c2\'fb\'e2\'e5\'e4\'e5\'f2 10 (\'ee\'f0\'e8\'e3\'e8\'ed\'e0\'eb\'fc\'ed\'ee\'e5 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5)\par
+\b\'cf\'ee \'f1\'f1\'fb\'eb\'ea\'e5 (Reference) \'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec ref\b0 : \'cf\'e5\'f0\'e5\'e4\'e0\'e5\'f2\'f1\'ff \'f1\'f1\'fb\'eb\'ea\'e0 \'ed\'e0 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'f3\'fe, \'e0 \'ed\'e5 \'ea\'ee\'ef\'e8\'ff. \'c8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff, \'e2\'ed\'e5\'f1\'e5\'ed\'ed\'fb\'e5 \'e2\'ed\'f3\'f2\'f0\'e8 \'ec\'e5\'f2\'ee\'e4\'e0, \'e1\'f3\'e4\'f3\'f2 \'e2\'e8\'e4\'ed\'fb \'e8 \'ef\'ee\'f1\'eb\'e5 \'e5\'e3\'ee \'e7\'e0\'e2\'e5\'f0\'f8\'e5\'ed\'e8\'ff.\par
+ void ModifyNumber(ref int num)\par
+ \{\par
+     num = num * 2; // \'c8\'e7\'ec\'e5\'ed\'ff\'e5\'f2\'f1\'ff \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e9 \'ef\'ee \'f1\'f1\'fb\'eb\'ea\'e5\par
+     Console.WriteLine("In method: " + num); // \'c2\'fb\'e2\'e5\'e4\'e5\'f2 20\par
+ \}\par
+int number = 10;\par
+ModifyNumber(ref number); // number \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2\'f1\'ff \'ef\'ee \'f1\'f1\'fb\'eb\'ea\'e5\par
+Console.WriteLine("After method: " + number); // \'c2\'fb\'e2\'e5\'e4\'e5\'f2 20 (\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'ee)\par
+\'c2\'e0\'e6\'ed\'ee! \'cf\'f0\'e8 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e8 ref \'ef\'f0\'e8 \'e2\'fb\'e7\'ee\'e2\'e5 \'ec\'e5\'f2\'ee\'e4\'e0 \'ed\'f3\'e6\'ed\'ee \'f3\'ea\'e0\'e7\'e0\'f2\'fc ref \'e8 \'ef\'f0\'e8 \'ee\'e1\'fa\'ff\'e2\'eb\'e5\'ed\'e8\'e8 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0.\par
+\par
+\b\'cf\'ee \'f1\'f1\'fb\'eb\'ea\'e5 \'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec out\b0 : \'c0\'ed\'e0\'eb\'ee\'e3\'e8\'f7\'ed\'ee ref, \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0 \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2\'f1\'ff \'ef\'ee \'f1\'f1\'fb\'eb\'ea\'e5, \'ed\'ee \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'e0\'ff \'ed\'e5 \'ee\'e1\'ff\'e7\'e0\'ed\'e0 \'e1\'fb\'f2\'fc \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e8\'f0\'ee\'e2\'e0\'ed\'e0 \'ef\'e5\'f0\'e5\'e4 \'e2\'fb\'e7\'ee\'e2\'ee\'ec \'ec\'e5\'f2\'ee\'e4\'e0. \'cc\'e5\'f2\'ee\'e4, \'e2 \'ea\'ee\'f2\'ee\'f0\'ee\'ec \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\'f1\'ff out, \'e4\'ee\'eb\'e6\'e5\'ed \'ef\'f0\'e8\'f1\'e2\'ee\'e8\'f2\'fc \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 out-\'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'f3 \'ef\'e5\'f0\'e5\'e4 \'e2\'ee\'e7\'e2\'f0\'e0\'f2\'ee\'ec.\par
+void Calculate(int a, int b, out int sum, out int product)\par
+\{\par
+   sum = a + b;\par
+   product = a * b;\par
+\}\par
+int sumResult, productResult;\par
+Calculate(5, 3, out sumResult, out productResult);\par
+Console.WriteLine($"Sum: \{sumResult\}, Product: \{productResult\}"); //\'c2\'fb\'e2\'e5\'e4\'e5\'f2 Sum: 8, Product: 15\par
+\'c2\'e0\'e6\'ed\'ee! \'cf\'f0\'e8 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e8 out \'ef\'f0\'e8 \'e2\'fb\'e7\'ee\'e2\'e5 \'ec\'e5\'f2\'ee\'e4\'e0 \'ed\'f3\'e6\'ed\'ee \'f3\'ea\'e0\'e7\'e0\'f2\'fc out \'e8 \'ef\'f0\'e8 \'ee\'e1\'fa\'ff\'e2\'eb\'e5\'ed\'e8\'e8 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0.\par
+\b\'cf\'ee \'f1\'f1\'fb\'eb\'ea\'e5 \'e4\'eb\'ff \'ec\'e0\'f1\'f1\'e8\'e2\'ee\'e2 \'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2: \b0\'cf\'f0\'e8 \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'e5 \'ec\'e0\'f1\'f1\'e8\'e2\'e0 \'e8\'eb\'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'e2 \'ec\'e5\'f2\'ee\'e4 \'ef\'ee \'f3\'ec\'ee\'eb\'f7\'e0\'ed\'e8\'fe \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2\'f1\'ff \'f1\'f1\'fb\'eb\'ea\'e0 \'ed\'e0 \'fd\'f2\'ee\'f2 \'ec\'e0\'f1\'f1\'e8\'e2 \'e8\'eb\'e8 \'ee\'e1\'fa\'e5\'ea\'f2. \'c8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff \'e2\'ed\'f3\'f2\'f0\'e8 \'ec\'e5\'f2\'ee\'e4\'e0 \'e1\'f3\'e4\'f3\'f2 \'ee\'f2\'f0\'e0\'e6\'e0\'f2\'fc\'f1\'ff \'ed\'e0 \'ee\'f0\'e8\'e3\'e8\'ed\'e0\'eb\'fc\'ed\'ee\'ec \'ec\'e0\'f1\'f1\'e8\'e2\'e5/\'ee\'e1\'fa\'e5\'ea\'f2\'e5.\par
+ void ModifyArray(int[] arr)\par
+ \{\par
+   arr[0] = 99; // \'c8\'e7\'ec\'e5\'ed\'e8\'f2\'f1\'ff \'ee\'f0\'e8\'e3\'e8\'ed\'e0\'eb\'fc\'ed\'fb\'e9 \'ec\'e0\'f1\'f1\'e8\'e2\par
+ \}\par
+ int[] myArray = \{ 1, 2, 3 \};\par
+ ModifyArray(myArray);\par
+ Console.WriteLine(myArray[0]);\par
+\f1\lang1033 ___\par
+\b\f0\lang1049\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'e2 C#\b0\par
+\b\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb (struct) \b0\f2\emdash  \f0\'fd\'f2\'ee \'f2\'e8\'ef\'fb \'e4\'e0\'ed\'ed\'fb\'f5, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'fe\'f2 \'ee\'e1\'fa\'e5\'e4\'e8\'ed\'ff\'f2\'fc \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e9 \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'f5 \'f2\'e8\'ef\'ee\'e2 \'e2 \'ee\'e4\'e8\'ed \'eb\'ee\'e3\'e8\'f7\'e5\'f1\'ea\'e8\'e9 \'e1\'eb\'ee\'ea. \'c2 \'ee\'f2\'eb\'e8\'f7\'e8\'e5 \'ee\'f2 \'ea\'eb\'e0\'f1\'f1\'ee\'e2, \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'ff\'e2\'eb\'ff\'fe\'f2\'f1\'ff \'e7\'ed\'e0\'f7\'e8\'ec\'fb\'ec\'e8 \'f2\'e8\'ef\'e0\'ec\'e8, \'f7\'f2\'ee \'ee\'e7\'ed\'e0\'f7\'e0\'e5\'f2, \'f7\'f2\'ee \'ee\'ed\'e8 \'f5\'f0\'e0\'ed\'ff\'f2 \'f1\'e2\'ee\'e8 \'e4\'e0\'ed\'ed\'fb\'e5 \'ed\'e5\'ef\'ee\'f1\'f0\'e5\'e4\'f1\'f2\'e2\'e5\'ed\'ed\'ee, \'e0 \'ed\'e5 \'f7\'e5\'f0\'e5\'e7 \'f1\'f1\'fb\'eb\'ea\'e8.\par
+\b\'ce\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'e5 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb\b0\par
+\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'ee\'e1\'fa\'ff\'e2\'eb\'ff\'fe\'f2\'f1\'ff \'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec \'ea\'eb\'fe\'f7\'e5\'e2\'ee\'e3\'ee \'f1\'eb\'ee\'e2\'e0 struct. \'ce\'ed\'e8 \'ec\'ee\'e3\'f3\'f2 \'f1\'ee\'e4\'e5\'f0\'e6\'e0\'f2\'fc \'ef\'ee\'eb\'ff, \'f1\'e2\'ee\'e9\'f1\'f2\'e2\'e0, \'ec\'e5\'f2\'ee\'e4\'fb \'e8 \'ea\'ee\'ed\'f1\'f2\'f0\'f3\'ea\'f2\'ee\'f0\'fb.\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0:\b0\par
+public struct Point\par
+\{\par
+    public int X \{ get; set; \}\par
+    public int Y \{ get; set; \}\par
+    // \'ca\'ee\'ed\'f1\'f2\'f0\'f3\'ea\'f2\'ee\'f0\par
+    public Point(int x, int y)\par
+    \{\par
+        X = x;\par
+        Y = y;\par
+    \}\par
+    // \'cc\'e5\'f2\'ee\'e4\par
+    public void Display()\par
+    \{\par
+        Console.WriteLine($"Point: (\{X\}, \{Y\})");\par
+    \}\par
+\}\par
+\b\'c8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb\b0\par
+\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'ec\'ee\'e6\'ed\'ee \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec \'ea\'ee\'ed\'f1\'f2\'f0\'f3\'ea\'f2\'ee\'f0\'e0 \'e8\'eb\'e8 \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e0\'f2\'ee\'f0\'ee\'e2 \'ef\'ee\'eb\'e5\'e9.\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0 \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'e8 \'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec \'ea\'ee\'ed\'f1\'f2\'f0\'f3\'ea\'f2\'ee\'f0\'e0\b0 :\par
+Point p1 = new Point(10, 20);\par
+p1.Display(); // Output: Point: (10, 20)\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0 \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'e8 \'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e0\'f2\'ee\'f0\'ee\'e2 \'ef\'ee\'eb\'e5\'e9:\b0\par
+csharp\par
+Point p2;\par
+p2.X = 30;\par
+p2.Y = 40;\par
+p2.Display(); // Output: Point: (30, 40)\b\par
+\'cf\'f0\'e8\'ec\'e5\'f0\'fb \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\par
+\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'e0 \'e4\'eb\'ff \'f5\'f0\'e0\'ed\'e5\'ed\'e8\'ff \'ea\'ee\'ee\'f0\'e4\'e8\'ed\'e0\'f2 \'f2\'ee\'f7\'ea\'e8\par
+\b0 public struct Point\par
+\{\par
+    public int X \{ get; set; \}\par
+    public int Y \{ get; set; \}\par
+    public Point(int x, int y)\par
+    \{\par
+        X = x;\par
+        Y = y;\par
+    \}\par
+    public void Display()\par
+    \{\par
+        Console.WriteLine($"Point: (\{X\}, \{Y\})");\par
+    \}\par
+\}\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+        Point p1 = new Point(10, 20);\par
+        p1.Display(); // Output: Point: (10, 20)\par
+        Point p2;\par
+        p2.X = 30;\par
+        p2.Y = 40;\par
+        p2.Display(); // Output: Point: (30, 40)\par
+    \}\par
+\}\par
+\par
+\b\'cc\'e5\'f2\'ee\'e4\'fb \'e2 C#\b0\par
+\'cc\'e5\'f2\'ee\'e4\'fb \f2\emdash  \f0\'fd\'f2\'ee \'e1\'eb\'ee\'ea\'e8 \'ea\'ee\'e4\'e0, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'fe\'f2 \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'ed\'fb\'e5 \'e4\'e5\'e9\'f1\'f2\'e2\'e8\'ff \'e8 \'ec\'ee\'e3\'f3\'f2 \'e1\'fb\'f2\'fc \'e2\'fb\'e7\'e2\'e0\'ed\'fb \'e8\'e7 \'e4\'f0\'f3\'e3\'e8\'f5 \'f7\'e0\'f1\'f2\'e5\'e9 \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'fb. \'ce\'ed\'e8 \'ef\'ee\'ec\'ee\'e3\'e0\'fe\'f2 \'ee\'f0\'e3\'e0\'ed\'e8\'e7\'ee\'e2\'e0\'f2\'fc \'ea\'ee\'e4, \'f1\'e4\'e5\'eb\'e0\'f2\'fc \'e5\'e3\'ee \'e1\'ee\'eb\'e5\'e5 \'f7\'e8\'f2\'e0\'e5\'ec\'fb\'ec \'e8 \'ef\'ee\'e2\'f2\'ee\'f0\'ed\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'fb\'ec.\par
+\b\'ce\'e1\'fa\'ff\'e2\'eb\'e5\'ed\'e8\'e5 \'ec\'e5\'f2\'ee\'e4\'e0\b0\par
+\'cc\'e5\'f2\'ee\'e4 \'ee\'e1\'fa\'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'f1 \'f3\'ea\'e0\'e7\'e0\'ed\'e8\'e5\'ec \'ec\'ee\'e4\'e8\'f4\'e8\'ea\'e0\'f2\'ee\'f0\'e0 \'e4\'ee\'f1\'f2\'f3\'ef\'e0, \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'e5\'ec\'ee\'e3\'ee \'f2\'e8\'ef\'e0, \'e8\'ec\'e5\'ed\'e8 \'ec\'e5\'f2\'ee\'e4\'e0 \'e8 \'f1\'ef\'e8\'f1\'ea\'e0 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2 \'e2 \'ea\'f0\'f3\'e3\'eb\'fb\'f5 \'f1\'ea\'ee\'e1\'ea\'e0\'f5.\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0:\b0\par
+public class Program\par
+\{\par
+    // \'cc\'e5\'f2\'ee\'e4, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ed\'e5 \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'e5\'f2 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'e8 \'ed\'e5 \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'e5\'f2 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb\par
+    public void PrintHello()\par
+    \{\par
+        Console.WriteLine("Hello, World!");\par
+    \}\par
+    // \'cc\'e5\'f2\'ee\'e4, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'e5\'f2 \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'e8 \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'e5\'f2 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb\par
+    public int Add(int a, int b)\par
+    \{\par
+        return a + b;\par
+    \}\par
+\}\par
+\b\'c2\'fb\'e7\'ee\'e2 \'ec\'e5\'f2\'ee\'e4\'e0\b0\par
+\'cc\'e5\'f2\'ee\'e4\'fb \'e2\'fb\'e7\'fb\'e2\'e0\'fe\'f2\'f1\'ff \'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec \'e8\'ec\'e5\'ed\'e8 \'ec\'e5\'f2\'ee\'e4\'e0 \'e8 \'ef\'e5\'f0\'e5\'e4\'e0\'f7\'e8 \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'fb\'f5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2 \'e2 \'ea\'f0\'f3\'e3\'eb\'fb\'f5 \'f1\'ea\'ee\'e1\'ea\'e0\'f5.\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0:\b0\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+        Program program = new Program();\par
+        program.PrintHello(); // \'c2\'fb\'e7\'ee\'e2 \'ec\'e5\'f2\'ee\'e4\'e0 \'e1\'e5\'e7 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2\par
+        int result = program.Add(5, 10); // \'c2\'fb\'e7\'ee\'e2 \'ec\'e5\'f2\'ee\'e4\'e0 \'f1 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0\'ec\'e8\par
+        Console.WriteLine(result); // Output: 15\par
+    \}\par
+\}\par
+\b\'cf\'e5\'f0\'e5\'e4\'e0\'f7\'e0 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2\b0\par
+\'cf\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb \'ec\'ee\'e3\'f3\'f2 \'ef\'e5\'f0\'e5\'e4\'e0\'e2\'e0\'f2\'fc\'f1\'ff \'e2 \'ec\'e5\'f2\'ee\'e4\'fb \'ef\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'fe, \'ef\'ee \'f1\'f1\'fb\'eb\'ea\'e5 \'e8\'eb\'e8 \'f1 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\'ec \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2 \'f1 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'ec \'f7\'e8\'f1\'eb\'ee\'ec \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2\'ee\'e2.\par
+\b\'cf\'e5\'f0\'e5\'e4\'e0\'f7\'e0 \'ef\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'fe: \'c7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0 \'ea\'ee\'ef\'e8\'f0\'f3\'e5\'f2\'f1\'ff \'e2 \'ec\'e5\'f2\'ee\'e4.\b0\par
+public void Increment(int number)\par
+\{\par
+    number++;\par
+\}\par
+\b\'cf\'e5\'f0\'e5\'e4\'e0\'f7\'e0 \'ef\'ee \'f1\'f1\'fb\'eb\'ea\'e5: \'d1\'f1\'fb\'eb\'ea\'e0 \'ed\'e0 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0 \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2\'f1\'ff \'e2 \'ec\'e5\'f2\'ee\'e4, \'f7\'f2\'ee \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'e8\'e7\'ec\'e5\'ed\'ff\'f2\'fc \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e0.\b0\par
+public void Increment(ref int number)\par
+\{\par
+    number++;\par
+\}\par
+static void Main()\par
+\{\par
+    int num = 5;\par
+    Increment(ref num);\par
+    Console.WriteLine(num); // Output: 6\par
+\}\par
+\b\'cf\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb \'f1 \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'fb\'ec \'f7\'e8\'f1\'eb\'ee\'ec \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2\'ee\'e2: \'cf\'ee\'e7\'e2\'ee\'eb\'ff\'fe\'f2 \'ef\'e5\'f0\'e5\'e4\'e0\'e2\'e0\'f2\'fc \'ef\'e5\'f0\'e5\'ec\'e5\'ed\'ed\'ee\'e5 \'ea\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2\'ee\'e2 \'e2 \'ec\'e5\'f2\'ee\'e4.\b0\par
+public void PrintNumbers(params int[] numbers)\par
+\{\par
+    foreach (int number in numbers)\par
+    \{\par
+        Console.WriteLine(number);\par
+    \}\par
+\}\par
+static void Main()\par
+\{\par
+    PrintNumbers(1, 2, 3, 4, 5); // Output: 1 2 3 4 5\par
+\}\b\i\f1\lang9\par
+}
+ 

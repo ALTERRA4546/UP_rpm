@@ -1,0 +1,40 @@
+﻿<Window x:Class="Ticket5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ticket5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+
+    <Grid>
+        <StackPanel>
+        <TextBlock Text="Стиль шрифта:" Margin="0,0,0,5"/>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <RadioButton GroupName="FontStyle" Content="Normal" IsChecked="True" Margin="5,0,0,0" Checked="FontStyle_Checked"/>
+                <RadioButton GroupName="FontStyle" Content="Italic" Margin="5,0,0,0" Checked="FontStyle_Checked"/>
+                <RadioButton GroupName="FontStyle" Content="Oblique" Margin="5,0,0,0" Checked="FontStyle_Checked"/>
+                <RadioButton GroupName="FontStyle" Content="Bold" Margin="5,0,0,10" Checked="FontStyle_Checked"/>
+            </StackPanel>
+
+        <TextBlock Text="Размер шрифта:" Margin="0,0,0,5"/>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <RadioButton GroupName="FontSize" Content="12" IsChecked="True" Checked="FontSize_Checked" Margin="0,0,10,0"/>
+            <RadioButton GroupName="FontSize" Content="16" Checked="FontSize_Checked" Margin="0,0,10,0"/>
+            <RadioButton GroupName="FontSize" Content="20" Checked="FontSize_Checked" Margin="0,0,10,0"/>
+            <RadioButton GroupName="FontSize" Content="24" Checked="FontSize_Checked"/>
+        </StackPanel>
+
+        <TextBlock Text="Цвет шрифта:" Margin="0,0,0,5"/>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <RadioButton GroupName="FontColor" Content="Black" IsChecked="True" Checked="FontColor_Checked" Margin="0,0,10,0"/>
+            <RadioButton GroupName="FontColor" Content="Red" Checked="FontColor_Checked" Margin="0,0,10,0"/>
+            <RadioButton GroupName="FontColor" Content="Green" Checked="FontColor_Checked" Margin="0,0,10,0"/>
+            <RadioButton GroupName="FontColor" Content="Blue" Checked="FontColor_Checked"/>
+        </StackPanel>
+    </StackPanel>
+    <TextBox x:Name="SampleTextBox" Text="Пример текста для визуализации" Margin="10,0,0,0"
+                 FontSize="12" FontFamily="Arial" FontWeight="Normal" FontStyle="Normal"
+                 TextWrapping="Wrap" Width="200" HorizontalAlignment="Right"/>
+    </Grid>
+</Window>

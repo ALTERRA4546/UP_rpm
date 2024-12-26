@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\KING\\Desktop\\\u0411\u0438\u043B\u0435\u0442\u044B \u0420\u041F\u041C\\\u0411\u0438\u043B\u0435\u0442 20\\Ticket20\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91D26F48-6A24-48BA-A99F-4E97C8134178}|Ticket20\\Ticket20.csproj|c:\\users\\king\\desktop\\\u0431\u0438\u043B\u0435\u0442\u044B \u0440\u043F\u043C\\\u0431\u0438\u043B\u0435\u0442 20\\ticket20\\ticket20\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D26F48-6A24-48BA-A99F-4E97C8134178}|Ticket20\\Ticket20.csproj|solutionrelative:ticket20\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D26F48-6A24-48BA-A99F-4E97C8134178}|Ticket20\\Ticket20.csproj|c:\\users\\king\\desktop\\\u0431\u0438\u043B\u0435\u0442\u044B \u0440\u043F\u043C\\\u0431\u0438\u043B\u0435\u0442 20\\ticket20\\ticket20\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{91D26F48-6A24-48BA-A99F-4E97C8134178}|Ticket20\\Ticket20.csproj|solutionrelative:ticket20\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\KING\\Desktop\\\u0411\u0438\u043B\u0435\u0442\u044B \u0420\u041F\u041C\\\u0411\u0438\u043B\u0435\u0442 20\\Ticket20\\Ticket20\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Ticket20\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\KING\\Desktop\\\u0411\u0438\u043B\u0435\u0442\u044B \u0420\u041F\u041C\\\u0411\u0438\u043B\u0435\u0442 20\\Ticket20\\Ticket20\\MainWindow.xaml",
+              "RelativeToolTip": "Ticket20\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-21T20:01:28.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\KING\\Desktop\\\u0411\u0438\u043B\u0435\u0442\u044B \u0420\u041F\u041C\\\u0411\u0438\u043B\u0435\u0442 20\\Ticket20\\Ticket20\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Ticket20\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\KING\\Desktop\\\u0411\u0438\u043B\u0435\u0442\u044B \u0420\u041F\u041C\\\u0411\u0438\u043B\u0435\u0442 20\\Ticket20\\Ticket20\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Ticket20\\MainWindow.xaml.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwEsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:01:27.745Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

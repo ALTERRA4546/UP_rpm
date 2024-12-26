@@ -1,0 +1,7 @@
+C:\Users\KING\Desktop\Билеты РПМ\Билет 15\Ticket15\Ticket15\bin\Debug\Ticket15.exe.config
+C:\Users\KING\Desktop\Билеты РПМ\Билет 15\Ticket15\Ticket15\bin\Debug\Ticket15.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 15\Ticket15\Ticket15\bin\Debug\Ticket15.pdb
+C:\Users\KING\Desktop\Билеты РПМ\Билет 15\Ticket15\Ticket15\obj\Debug\Ticket15.csproj.AssemblyReference.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 15\Ticket15\Ticket15\obj\Debug\Ticket15.csproj.CoreCompileInputs.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 15\Ticket15\Ticket15\obj\Debug\Ticket15.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 15\Ticket15\Ticket15\obj\Debug\Ticket15.pdb

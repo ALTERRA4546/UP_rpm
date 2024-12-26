@@ -1,0 +1,15 @@
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\bin\Debug\Ticket3.exe.config
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\bin\Debug\Ticket3.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\bin\Debug\Ticket3.pdb
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\Ticket3.csproj.AssemblyReference.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\MainWindow.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\App.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\Ticket3_MarkupCompile.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\Ticket3_MarkupCompile.lref
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\MainWindow.baml
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\Ticket3.g.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\Ticket3.Properties.Resources.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\Ticket3.csproj.GenerateResource.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\Ticket3.csproj.CoreCompileInputs.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\Ticket3.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 3\Ticket3\Ticket3\obj\Debug\Ticket3.pdb

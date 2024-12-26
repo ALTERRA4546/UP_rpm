@@ -1,0 +1,17 @@
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\bin\Debug\Ticket4.exe.config
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\bin\Debug\Ticket4.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\bin\Debug\Ticket4.pdb
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Ticket4.csproj.AssemblyReference.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\MainWindow.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Window1.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\App.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Ticket4_MarkupCompile.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Ticket4_MarkupCompile.lref
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\MainWindow.baml
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Window1.baml
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Ticket4.g.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Ticket4.Properties.Resources.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Ticket4.csproj.GenerateResource.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Ticket4.csproj.CoreCompileInputs.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Ticket4.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 4\Ticket4\Ticket4\obj\Debug\Ticket4.pdb

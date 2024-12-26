@@ -1,0 +1,15 @@
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\bin\Debug\Ticket7.exe.config
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\bin\Debug\Ticket7.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\bin\Debug\Ticket7.pdb
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\Ticket7.csproj.AssemblyReference.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\MainWindow.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\App.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\Ticket7_MarkupCompile.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\Ticket7_MarkupCompile.lref
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\MainWindow.baml
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\Ticket7.g.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\Ticket7.Properties.Resources.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\Ticket7.csproj.GenerateResource.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\Ticket7.csproj.CoreCompileInputs.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\Ticket7.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 7\Ticket7\Ticket7\obj\Debug\Ticket7.pdb

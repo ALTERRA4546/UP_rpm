@@ -1,0 +1,15 @@
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\bin\Debug\Ticket2.exe.config
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\bin\Debug\Ticket2.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\bin\Debug\Ticket2.pdb
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\Ticket2.csproj.AssemblyReference.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\MainWindow.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\App.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\Ticket2_MarkupCompile.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\Ticket2_MarkupCompile.lref
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\MainWindow.baml
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\Ticket2.g.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\Ticket2.Properties.Resources.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\Ticket2.csproj.GenerateResource.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\Ticket2.csproj.CoreCompileInputs.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\Ticket2.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 2\Ticket2\Ticket2\obj\Debug\Ticket2.pdb

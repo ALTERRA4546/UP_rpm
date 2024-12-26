@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\KING\\Desktop\\\u0411\u0438\u043B\u0435\u0442\u044B \u0420\u041F\u041C\\\u0411\u0438\u043B\u0435\u0442 21\\Ticket21\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3224EEC2-01A2-4686-ABD0-FD8CA41AF1E9}|Ticket21\\Ticket21.csproj|c:\\users\\king\\desktop\\\u0431\u0438\u043B\u0435\u0442\u044B \u0440\u043F\u043C\\\u0431\u0438\u043B\u0435\u0442 21\\ticket21\\ticket21\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3224EEC2-01A2-4686-ABD0-FD8CA41AF1E9}|Ticket21\\Ticket21.csproj|solutionrelative:ticket21\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\KING\\Desktop\\\u0411\u0438\u043B\u0435\u0442\u044B \u0420\u041F\u041C\\\u0411\u0438\u043B\u0435\u0442 21\\Ticket21\\Ticket21\\Program.cs",
+              "RelativeDocumentMoniker": "Ticket21\\Program.cs",
+              "ToolTip": "C:\\Users\\KING\\Desktop\\\u0411\u0438\u043B\u0435\u0442\u044B \u0420\u041F\u041C\\\u0411\u0438\u043B\u0435\u0442 21\\Ticket21\\Ticket21\\Program.cs",
+              "RelativeToolTip": "Ticket21\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvy4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:33:58.622Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

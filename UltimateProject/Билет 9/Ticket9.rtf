@@ -1,0 +1,682 @@
+{\rtf1\ansi\ansicpg1251\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset204 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\i\f0\fs22\lang1049\'ce\'f1\'ed\'ee\'e2\'ed\'fb\'e5 \'e3\'f0\'f3\'ef\'ef\'fb \'f8\'e0\'e1\'eb\'ee\'ed\'ee\'e2 \'ef\'f0\'ee\'e5\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff: \'e2\'e8\'e4\'fb (\'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'ed\'fb\'e5, \'ef\'ee\'f0\'ee\'e6\'e4\'e0\'fe\'f9\'e8\'e5, \'ef\'ee\'e2\'e5\'e4\'e5\'ed\'f7\'e5\'f1\'ea\'e8\'e5), \'ef\'f0\'e8\'ec\'e5\'ed\'e5\'ed\'e8\'e5, \'ef\'f0\'e8\'ec\'e5\'f0\'fb.\par
+\'c4\'e5\'eb\'e5\'e3\'e0\'f2\'fb: \'ef\'ee\'ed\'ff\'f2\'e8\'e5, \'ef\'f0\'e8\'ec\'e5\'f0\'fb.\par
+\'d1\'ee\'e7\'e4\'e0\'e9\'f2\'e5 DataGrid \'e4\'eb\'ff \'ee\'f2\'ee\'e1\'f0\'e0\'e6\'e5\'ed\'e8\'ff \'e8 \'f0\'e5\'e4\'e0\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'f1\'ef\'e8\'f1\'ea\'e0 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 Product \'f1\'ee \'f1\'e2\'ee\'e9\'f1\'f2\'e2\'e0\'ec\'e8 Name, Price \'e8 Quantity. \'d0\'e5\'e0\'eb\'e8\'e7\'f3\'e9\'f2\'e5 \'e4\'ee\'e1\'e0\'e2\'eb\'e5\'ed\'e8\'e5, \'f3\'e4\'e0\'eb\'e5\'ed\'e8\'e5 \'e8 \'f0\'e5\'e4\'e0\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5 \'f1\'f2\'f0\'ee\'ea \'e2 DataGrid (\'e1\'e5\'e7 \'ef\'ee\'e4\'ea\'eb\'fe\'f7\'e5\'ed\'e8\'ff \'ea SQL Server \'e8\'eb\'e8 \'eb\'fe\'e1\'ee\'e9 \'e4\'f0\'f3\'e3\'ee\'e9 \'e1\'e0\'e7\'e5 \'e4\'e0\'ed\'ed\'fb\'f5).\par
+\par
+\i0\'cf\'ee\'f0\'ee\'e6\'e4\'e0\'fe\'f9\'e8\'e5 (Creational) \'f8\'e0\'e1\'eb\'ee\'ed\'fb\b0\par
+\'cd\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5: \'d3\'ef\'f0\'ee\'f9\'e0\'fe\'f2 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2, \'ef\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'ff \'e3\'e8\'e1\'ea\'e8\'e5 \'e8 \'f3\'ef\'f0\'e0\'e2\'eb\'ff\'e5\'ec\'fb\'e5 \'ec\'e5\'f5\'e0\'ed\'e8\'e7\'ec\'fb \'e8\'ed\'f1\'f2\'e0\'ed\'f6\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff. \'ce\'ed\'e8 \'e0\'e1\'f1\'f2\'f0\'e0\'e3\'e8\'f0\'f3\'fe\'f2 \'ef\'f0\'ee\'f6\'e5\'f1\'f1 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'ff, \'e4\'e5\'eb\'e0\'ff \'ea\'ee\'e4 \'e1\'ee\'eb\'e5\'e5 \'ed\'e5\'e7\'e0\'e2\'e8\'f1\'e8\'ec\'fb\'ec \'ee\'f2 \'ea\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'f5 \'ea\'eb\'e0\'f1\'f1\'ee\'e2.\par
+\b\'cf\'f0\'e8\'ec\'e5\'ed\'e5\'ed\'e8\'e5:\b0\par
+\'ca\'ee\'e3\'e4\'e0 \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee \'e3\'e8\'e1\'ea\'ee \'f3\'ef\'f0\'e0\'e2\'eb\'ff\'f2\'fc \'ef\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'ec \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2.\par
+\'ca\'ee\'e3\'e4\'e0 \'ea\'eb\'e0\'f1\'f1 \'ed\'e5 \'e4\'ee\'eb\'e6\'e5\'ed \'e7\'ed\'e0\'f2\'fc \'ee \'ea\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'f5 \'ea\'eb\'e0\'f1\'f1\'e0\'f5, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ee\'ed \'f1\'ee\'e7\'e4\'e0\'e5\'f2.\par
+\'ca\'ee\'e3\'e4\'e0 \'ed\'f3\'e6\'ed\'ee \'ee\'e3\'f0\'e0\'ed\'e8\'f7\'e8\'f2\'fc \'ea\'ee\'eb\'e8\'f7\'e5\'f1\'f2\'e2\'ee \'fd\'ea\'e7\'e5\'ec\'ef\'eb\'ff\'f0\'ee\'e2 \'ea\'eb\'e0\'f1\'f1\'e0.\par
+\'ca\'ee\'e3\'e4\'e0 \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'ee \'ef\'ee\'e2\'f2\'ee\'f0\'ed\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb.\par
+\b\'ce\'f1\'ed\'ee\'e2\'ed\'fb\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'fb:\b0\par
+Abstract Factory (\'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'e0\'ff \'f4\'e0\'e1\'f0\'e8\'ea\'e0): \'d1\'ee\'e7\'e4\'e0\'e5\'f2 \'f1\'e5\'ec\'e5\'e9\'f1\'f2\'e2\'e0 \'f1\'e2\'ff\'e7\'e0\'ed\'ed\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'e1\'e5\'e7 \'f3\'ea\'e0\'e7\'e0\'ed\'e8\'ff \'ea\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'f5 \'ea\'eb\'e0\'f1\'f1\'ee\'e2.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'f0\'e0\'e7\'ed\'fb\'f5 \'e2\'e8\'e4\'ee\'e2 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fc\'f1\'ea\'ee\'e3\'ee \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'e0 (\'ea\'ed\'ee\'ef\'ee\'ea, \'f2\'e5\'ea\'f1\'f2\'ee\'e2\'fb\'f5 \'ef\'ee\'eb\'e5\'e9) \'e4\'eb\'ff \'f0\'e0\'e7\'ed\'fb\'f5 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'ee\'ed\'ed\'fb\'f5 \'f1\'e8\'f1\'f2\'e5\'ec (Windows, macOS).\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'e5 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'fb \'ef\'f0\'ee\'e4\'f3\'ea\'f2\'ee\'e2\par
+    public interface IButton \{ void Render(); \}\par
+    public interface ITextBox \{ void Render(); \}\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'e0\'ff \'f4\'e0\'e1\'f0\'e8\'ea\'e0\par
+    public interface IUIFactory \{\par
+        IButton CreateButton();\par
+        ITextBox CreateTextBox();\par
+    \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e5 \'ef\'f0\'ee\'e4\'f3\'ea\'f2\'fb \'e8 \'f4\'e0\'e1\'f0\'e8\'ea\'e8 \'e4\'eb\'ff Windows\par
+    public class WindowsButton : IButton \{ public void Render() \{ /*...*/ \} \}\par
+    public class WindowsTextBox : ITextBox \{ public void Render() \{ /*...*/ \} \}\par
+    public class WindowsUIFactory : IUIFactory \{\par
+        public IButton CreateButton() \{ return new WindowsButton(); \}\par
+        public ITextBox CreateTextBox() \{ return new WindowsTextBox(); \}\par
+    \}\par
+    // \'cf\'f0\'e8\'ec\'e5\'ed\'e5\'ed\'e8\'e5\par
+    public class Client \{\par
+        private IUIFactory _factory;\par
+        public Client(IUIFactory factory) \{ _factory = factory; \}\par
+        public void RenderUI() \{\par
+            IButton button = _factory.CreateButton();\par
+            ITextBox textBox = _factory.CreateTextBox();\par
+            button.Render();\par
+            textBox.Render();\par
+        \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    IUIFactory factory = new WindowsUIFactory();\par
+    Client client = new Client(factory);\par
+    client.RenderUI();\par
+Builder (\'d1\'f2\'f0\'ee\'e8\'f2\'e5\'eb\'fc): \'ce\'f2\'e4\'e5\'eb\'ff\'e5\'f2 \'ea\'ee\'ed\'f1\'f2\'f0\'f3\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5 \'f1\'eb\'ee\'e6\'ed\'ee\'e3\'ee \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'ee\'f2 \'e5\'e3\'ee \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff, \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'ff \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'f0\'e0\'e7\'ed\'fb\'e5 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'ee\'e4\'ed\'ee\'e3\'ee \'ee\'e1\'fa\'e5\'ea\'f2\'e0.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'f5 \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'e9 \'ea\'ee\'ec\'ef\'fc\'fe\'f2\'e5\'f0\'ed\'ee\'e9 \'f1\'e8\'f1\'f2\'e5\'ec\'fb (\'f0\'e0\'e7\'ed\'fb\'e5 \'ef\'f0\'ee\'f6\'e5\'f1\'f1\'ee\'f0\'fb, \'ef\'e0\'ec\'ff\'f2\'fc, \'e6\'e5\'f1\'f2\'ea\'e8\'e5 \'e4\'e8\'f1\'ea\'e8).\par
+    // \'cf\'f0\'ee\'e4\'f3\'ea\'f2\par
+    public class Computer \{\par
+        public string CPU \{ get; set; \}\par
+        public string RAM \{ get; set; \}\par
+        public string Storage \{ get; set; \}\par
+        public override string ToString() => $"CPU: \{CPU\}, RAM: \{RAM\}, Storage: \{Storage\}";\par
+    \}\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'e9 \'f1\'f2\'f0\'ee\'e8\'f2\'e5\'eb\'fc\par
+    public interface IComputerBuilder \{\par
+        void SetCPU(string cpu);\par
+        void SetRAM(string ram);\par
+        void SetStorage(string storage);\par
+        Computer Build();\par
+    \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e9 \'f1\'f2\'f0\'ee\'e8\'f2\'e5\'eb\'fc\par
+    public class DesktopComputerBuilder : IComputerBuilder \{\par
+        private Computer _computer = new Computer();\par
+        public void SetCPU(string cpu) \{ _computer.CPU = cpu; \}\par
+        public void SetRAM(string ram) \{ _computer.RAM = ram; \}\par
+        public void SetStorage(string storage) \{ _computer.Storage = storage; \}\par
+        public Computer Build() \{ return _computer; \}\par
+    \}\par
+    // \'c4\'e8\'f0\'e5\'ea\'f2\'ee\'f0 (\'ee\'ef\'f6\'e8\'ee\'ed\'e0\'eb\'fc\'ed\'ee)\par
+    public class ComputerDirector \{\par
+        private IComputerBuilder _builder;\par
+        public ComputerDirector(IComputerBuilder builder) \{ _builder = builder; \}\par
+        public Computer BuildGamingComputer() \{\par
+            _builder.SetCPU("High-End CPU");\par
+            _builder.SetRAM("32GB");\par
+            _builder.SetStorage("1TB SSD");\par
+            return _builder.Build();\par
+        \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    IComputerBuilder builder = new DesktopComputerBuilder();\par
+    ComputerDirector director = new ComputerDirector(builder);\par
+    Computer gamingPC = director.BuildGamingComputer();\par
+Factory Method (\'d4\'e0\'e1\'f0\'e8\'f7\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4): \'ce\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'e4\'eb\'ff \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'e0, \'ed\'ee \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ef\'ee\'e4\'ea\'eb\'e0\'f1\'f1\'e0\'ec \'f0\'e5\'f8\'e0\'f2\'fc, \'ea\'e0\'ea\'ee\'e9 \'ea\'eb\'e0\'f1\'f1 \'e8\'ed\'f1\'f2\'e0\'ed\'f6\'e8\'f0\'ee\'e2\'e0\'f2\'fc.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'f0\'e0\'e7\'ed\'fb\'f5 \'f2\'e8\'ef\'ee\'e2 \'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'ee\'e2 (PDF, Word, TXT) \'ed\'e0 \'ee\'f1\'ed\'ee\'e2\'e5 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2.\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'e9 \'ef\'f0\'ee\'e4\'f3\'ea\'f2\par
+    public interface IDocument \{ void Open(); \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e5 \'ef\'f0\'ee\'e4\'f3\'ea\'f2\'fb\par
+    public class PDFDocument : IDocument \{ public void Open() \{ /*...*/ \} \}\par
+    public class WordDocument : IDocument \{ public void Open() \{ /*...*/ \} \}\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'e9 \'f1\'ee\'e7\'e4\'e0\'f2\'e5\'eb\'fc\par
+    public abstract class DocumentFactory \{\par
+       public abstract IDocument CreateDocument();\par
+    \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e5 \'f1\'ee\'e7\'e4\'e0\'f2\'e5\'eb\'e8\par
+    public class PDFDocumentFactory : DocumentFactory \{\par
+        public override IDocument CreateDocument() \{ return new PDFDocument(); \}\par
+    \}\par
+    public class WordDocumentFactory : DocumentFactory \{\par
+        public override IDocument CreateDocument() \{ return new WordDocument(); \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    DocumentFactory factory = new PDFDocumentFactory();\par
+    IDocument doc = factory.CreateDocument();\par
+    doc.Open();\par
+Prototype (\'cf\'f0\'ee\'f2\'ee\'f2\'e8\'ef): \'cf\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ed\'ee\'e2\'fb\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'ef\'f3\'f2\'e5\'ec \'ea\'eb\'ee\'ed\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'f1\'f3\'f9\'e5\'f1\'f2\'e2\'f3\'fe\'f9\'e5\'e3\'ee \'ee\'e1\'fa\'e5\'ea\'f2\'e0 (\'ef\'f0\'ee\'f2\'ee\'f2\'e8\'ef\'e0).\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'ea\'ee\'ef\'e8\'e9 \'f1\'eb\'ee\'e6\'ed\'fb\'f5 \'e8\'e3\'f0\'ee\'e2\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'e1\'e5\'e7 \'ef\'ee\'e2\'f2\'ee\'f0\'ed\'ee\'e3\'ee \'ea\'ee\'ed\'f1\'f2\'f0\'f3\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff.\par
+    public interface ICloneable<T> where T: class\par
+    \{\par
+        T Clone();\par
+    \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e9 \'ef\'f0\'ee\'f2\'ee\'f2\'e8\'ef\par
+    public class Monster : ICloneable<Monster> \{\par
+        public string Name \{ get; set; \}\par
+        public int Health \{ get; set; \}\par
+        public Monster(string name, int health)\par
+        \{\par
+           Name = name;\par
+           Health = health;\par
+        \}\par
+        public Monster Clone() => new Monster(Name, Health);\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    Monster originalMonster = new Monster("Orc", 100);\par
+    Monster clonedMonster = originalMonster.Clone();\par
+Singleton (\'ce\'e4\'e8\'ed\'ee\'f7\'ea\'e0): \'c3\'e0\'f0\'e0\'ed\'f2\'e8\'f0\'f3\'e5\'f2, \'f7\'f2\'ee \'f3 \'ea\'eb\'e0\'f1\'f1\'e0 \'e5\'f1\'f2\'fc \'f2\'ee\'eb\'fc\'ea\'ee \'ee\'e4\'e8\'ed \'fd\'ea\'e7\'e5\'ec\'ef\'eb\'ff\'f0 \'e8 \'ef\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'ea \'ed\'e5\'ec\'f3 \'e3\'eb\'ee\'e1\'e0\'eb\'fc\'ed\'f3\'fe \'f2\'ee\'f7\'ea\'f3 \'e4\'ee\'f1\'f2\'f3\'ef\'e0.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'ca\'eb\'e0\'f1\'f1 \'e4\'eb\'ff \'f3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e0\'ec\'e8 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff \'e8\'eb\'e8 \'eb\'ee\'e3\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff.\par
+    public sealed class SettingsManager \{\par
+        private static SettingsManager _instance;\par
+        private SettingsManager() \{ /* \'c8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff */ \}\par
+        public static SettingsManager GetInstance() \{\par
+            return _instance ??= new SettingsManager();\par
+        \}\par
+        public string Setting1 \{ get; set; \}\par
+        //...\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    SettingsManager settings = SettingsManager.GetInstance();\par
+\b 2. \'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'ed\'fb\'e5 (Structural) \'f8\'e0\'e1\'eb\'ee\'ed\'fb\b0\par
+\'cd\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5: \'ce\'ef\'e8\'f1\'fb\'e2\'e0\'fe\'f2, \'ea\'e0\'ea \'ea\'ee\'ec\'ef\'ee\'ed\'ee\'e2\'e0\'f2\'fc \'ea\'eb\'e0\'f1\'f1\'fb \'e8 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'e4\'eb\'ff \'f4\'ee\'f0\'ec\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'e1\'ee\'eb\'e5\'e5 \'ea\'f0\'f3\'ef\'ed\'fb\'f5 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0. \'ce\'ed\'e8 \'ea\'e0\'f1\'e0\'fe\'f2\'f1\'ff \'ee\'f2\'ed\'ee\'f8\'e5\'ed\'e8\'e9 \'ec\'e5\'e6\'e4\'f3 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'ec\'e8.\par
+\'cf\'f0\'e8\'ec\'e5\'ed\'e5\'ed\'e8\'e5:\par
+\'ca\'ee\'e3\'e4\'e0 \'ed\'f3\'e6\'ed\'ee \'f1\'ee\'e7\'e4\'e0\'f2\'fc \'f1\'eb\'ee\'e6\'ed\'fb\'e5 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'e8\'e7 \'ef\'f0\'ee\'f1\'f2\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2.\par
+\'ca\'ee\'e3\'e4\'e0 \'ed\'f3\'e6\'ed\'ee \'e4\'ee\'e1\'e0\'e2\'e8\'f2\'fc \'ed\'ee\'e2\'f3\'fe \'f4\'f3\'ed\'ea\'f6\'e8\'ee\'ed\'e0\'eb\'fc\'ed\'ee\'f1\'f2\'fc \'ea \'ee\'e1\'fa\'e5\'ea\'f2\'f3 \'e1\'e5\'e7 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff \'e5\'e3\'ee \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb.\par
+\'ca\'ee\'e3\'e4\'e0 \'ed\'f3\'e6\'ed\'ee \'f3\'ef\'f0\'e0\'e2\'eb\'ff\'f2\'fc \'e2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5\'ec \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2, \'ed\'e5 \'e7\'ed\'e0\'ff \'e8\'f5 \'ea\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'f5 \'ea\'eb\'e0\'f1\'f1\'ee\'e2.\par
+\'ce\'f1\'ed\'ee\'e2\'ed\'fb\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'fb:\par
+Adapter (\'c0\'e4\'e0\'ef\'f2\'e5\'f0): \'cf\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'ec \'f1 \'ed\'e5\'f1\'ee\'e2\'ec\'e5\'f1\'f2\'e8\'ec\'fb\'ec\'e8 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'e0\'ec\'e8 \'f0\'e0\'e1\'ee\'f2\'e0\'f2\'fc \'e2\'ec\'e5\'f1\'f2\'e5.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5 \'f1\'f2\'e0\'f0\'ee\'e9 \'e1\'e8\'e1\'eb\'e8\'ee\'f2\'e5\'ea\'e8 \'f1 \'ed\'ee\'e2\'fb\'ec \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'ee\'ec.\par
+    // \'d1\'f2\'e0\'f0\'fb\'e9 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\par
+    public interface IOldAPI \{ void OldMethod(); \}\par
+    public class OldAPI : IOldAPI \{ public void OldMethod() \{ /*...*/ \} \}\par
+    // \'cd\'ee\'e2\'fb\'e9 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\par
+    public interface INewAPI \{ void NewMethod(); \}\par
+    // \'c0\'e4\'e0\'ef\'f2\'e5\'f0\par
+    public class Adapter : INewAPI \{\par
+        private IOldAPI _oldApi;\par
+        public Adapter(IOldAPI oldApi) \{ _oldApi = oldApi; \}\par
+        public void NewMethod() \{ _oldApi.OldMethod(); \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    IOldAPI oldAPI = new OldAPI();\par
+    INewAPI newAPI = new Adapter(oldAPI);\par
+    newAPI.NewMethod();\par
+Bridge (\'cc\'ee\'f1\'f2): \'ce\'f2\'e4\'e5\'eb\'ff\'e5\'f2 \'e0\'e1\'f1\'f2\'f0\'e0\'ea\'f6\'e8\'fe \'ee\'f2 \'f0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'e8, \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'ff \'e8\'ec \'e8\'e7\'ec\'e5\'ed\'ff\'f2\'fc\'f1\'ff \'ed\'e5\'e7\'e0\'e2\'e8\'f1\'e8\'ec\'ee.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d0\'e0\'e7\'e4\'e5\'eb\'e5\'ed\'e8\'e5 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff (\'ee\'ea\'ed\'ee, \'f4\'ee\'f0\'ec\'e0) \'ee\'f2 \'f0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'e8 (\'e3\'f0\'e0\'f4\'e8\'f7\'e5\'f1\'ea\'e8\'e9 API).\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f6\'e8\'ff\par
+    public abstract class Abstraction \{\par
+       protected IImplementor _implementor;\par
+       public Abstraction(IImplementor implementor) \{ _implementor = implementor; \}\par
+       public abstract void Operation();\par
+    \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'e0\'ff \'e0\'e1\'f1\'f2\'f0\'e0\'ea\'f6\'e8\'ff\par
+    public class RefinedAbstraction : Abstraction \{\par
+        public RefinedAbstraction(IImplementor implementor) : base(implementor) \{ \}\par
+        public override void Operation() \{ _implementor.Implementation(); \}\par
+    \}\par
+    // \'c8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'f0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'e8\par
+    public interface IImplementor \{ void Implementation(); \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'e0\'ff \'f0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff\par
+    public class ConcreteImplementorA : IImplementor \{ public void Implementation() \{ /*...*/ \} \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    IImplementor implementor = new ConcreteImplementorA();\par
+    Abstraction abstraction = new RefinedAbstraction(implementor);\par
+    abstraction.Operation();\par
+Composite (\'ca\'ee\'ec\'ef\'ee\'ed\'ee\'e2\'f9\'e8\'ea): \'cf\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'e8\'f2\'fc \'e8\'e5\'f0\'e0\'f0\'f5\'e8\'fe \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2, \'e3\'e4\'e5 \'ec\'ee\'e6\'ed\'ee \'ee\'e1\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'f2\'fc \'ea\'e0\'ea \'ee\'f2\'e4\'e5\'eb\'fc\'ed\'fb\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb, \'f2\'e0\'ea \'e8 \'e8\'f5 \'ea\'ee\'ec\'ef\'ee\'e7\'e8\'f6\'e8\'e8 (\'e3\'f0\'f3\'ef\'ef\'fb \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2) \'e5\'e4\'e8\'ed\'ee\'ee\'e1\'f0\'e0\'e7\'ed\'ee.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'cf\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'f4\'e0\'e9\'eb\'ee\'e2\'ee\'e9 \'f1\'e8\'f1\'f2\'e5\'ec\'fb (\'f4\'e0\'e9\'eb\'fb \'e8 \'ef\'e0\'ef\'ea\'e8).\par
+    // \'ce\'e1\'f9\'e8\'e9 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\par
+    public interface IComponent \{ void Operation(); \}\par
+    // \'cb\'e8\'f1\'f2\par
+    public class Leaf : IComponent \{\par
+        public void Operation() \{ /*...*/ \}\par
+    \}\par
+    // \'ca\'ee\'ec\'ef\'ee\'e7\'e8\'f6\'e8\'ff\par
+    public class Composite : IComponent \{\par
+        private List<IComponent> _children = new List<IComponent>();\par
+        public void Add(IComponent component) \{ _children.Add(component); \}\par
+        public void Remove(IComponent component) \{ _children.Remove(component); \}\par
+        public void Operation() \{\par
+            foreach (IComponent child in _children)\par
+                child.Operation();\par
+        \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    Composite root = new Composite();\par
+    root.Add(new Leaf());\par
+    Composite branch = new Composite();\par
+    branch.Add(new Leaf());\par
+    root.Add(branch);\par
+    root.Operation();\par
+Decorator (\'c4\'e5\'ea\'ee\'f0\'e0\'f2\'ee\'f0): \'c4\'e8\'ed\'e0\'ec\'e8\'f7\'e5\'f1\'ea\'e8 \'e4\'ee\'e1\'e0\'e2\'eb\'ff\'e5\'f2 \'ed\'ee\'e2\'f3\'fe \'f4\'f3\'ed\'ea\'f6\'e8\'ee\'ed\'e0\'eb\'fc\'ed\'ee\'f1\'f2\'fc \'ea \'ee\'e1\'fa\'e5\'ea\'f2\'f3.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'c4\'ee\'e1\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'f4\'f3\'ed\'ea\'f6\'e8\'ee\'ed\'e0\'eb\'fc\'ed\'ee\'f1\'f2\'e8 \'f8\'e8\'f4\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'e8\'eb\'e8 \'f1\'e6\'e0\'f2\'e8\'ff \'ef\'ee\'f2\'ee\'ea\'f3 \'e4\'e0\'ed\'ed\'fb\'f5.\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'e9 \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\par
+    public interface IComponent \{ string Operation(); \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e9 \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\par
+    public class ConcreteComponent : IComponent \{\par
+        public string Operation() \{ return "Original"; \}\par
+    \}\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'e9 \'e4\'e5\'ea\'ee\'f0\'e0\'f2\'ee\'f0\par
+    public abstract class Decorator : IComponent \{\par
+        protected IComponent _component;\par
+        public Decorator(IComponent component) \{ _component = component; \}\par
+        public virtual string Operation() \{ return _component.Operation(); \}\par
+    \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e9 \'e4\'e5\'ea\'ee\'f0\'e0\'f2\'ee\'f0\par
+    public class ConcreteDecorator : Decorator \{\par
+       public ConcreteDecorator(IComponent component) : base(component)\{\}\par
+       public override string Operation() \{ return $"[\{base.Operation()\}]"; \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    IComponent component = new ConcreteComponent();\par
+    component = new ConcreteDecorator(component);\par
+    string result = component.Operation();\par
+Facade (\'d4\'e0\'f1\'e0\'e4): \'cf\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'ef\'f0\'ee\'f1\'f2\'ee\'e9 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'ea \'f1\'eb\'ee\'e6\'ed\'ee\'e9 \'ef\'ee\'e4\'f1\'e8\'f1\'f2\'e5\'ec\'e5.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'c8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'e4\'eb\'ff \'f0\'e0\'e1\'ee\'f2\'fb \'f1\'ee \'f1\'eb\'ee\'e6\'ed\'ee\'e9 \'f1\'e8\'f1\'f2\'e5\'ec\'ee\'e9 \'e7\'e0\'ea\'e0\'e7\'ee\'e2.\par
+    // \'d1\'eb\'ee\'e6\'ed\'e0\'ff \'ef\'ee\'e4\'f1\'e8\'f1\'f2\'e5\'ec\'e0\par
+    public class SubsystemA \{ public void OperationA() \{ /*...*/ \} \}\par
+    public class SubsystemB \{ public void OperationB() \{ /*...*/ \} \}\par
+    public class SubsystemC \{ public void OperationC() \{ /*...*/ \} \}\par
+    // \'d4\'e0\'f1\'e0\'e4\par
+    public class Facade \{\par
+        private SubsystemA _a = new SubsystemA();\par
+        private SubsystemB _b = new SubsystemB();\par
+        private SubsystemC _c = new SubsystemC();\par
+        public void Operation1() \{ _a.OperationA(); _b.OperationB(); \}\par
+        public void Operation2() \{ _b.OperationB(); _c.OperationC(); \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    Facade facade = new Facade();\par
+    facade.Operation1();\par
+Flyweight (\'cb\'e5\'e3\'ea\'ee\'e2\'e5\'f1): \'cf\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'fd\'f4\'f4\'e5\'ea\'f2\'e8\'e2\'ed\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'ef\'e0\'ec\'ff\'f2\'fc, \'f0\'e0\'e7\'e4\'e5\'eb\'ff\'ff \'ee\'e1\'f9\'e5\'e5 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e5 \'ec\'e5\'e6\'e4\'f3 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'ec\'e8.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d5\'f0\'e0\'ed\'e5\'ed\'e8\'e5 \'f1\'e8\'ec\'e2\'ee\'eb\'ee\'e2 \'e2 \'f2\'e5\'ea\'f1\'f2\'ee\'e2\'ee\'ec \'f0\'e5\'e4\'e0\'ea\'f2\'ee\'f0\'e5.\par
+\b 3. \'cf\'ee\'e2\'e5\'e4\'e5\'ed\'f7\'e5\'f1\'ea\'e8\'e5 (Behavioral) \'f8\'e0\'e1\'eb\'ee\'ed\'fb\b0\par
+\'cd\'e0\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'e5: \'ce\'ef\'e8\'f1\'fb\'e2\'e0\'fe\'f2 \'e2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5 \'ec\'e5\'e6\'e4\'f3 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'ec\'e8, \'ea\'e0\'ea \'ee\'ed\'e8 \'ee\'e1\'f9\'e0\'fe\'f2\'f1\'ff \'e8 \'f0\'e0\'f1\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'fe\'f2 \'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'e5\'ed\'ed\'ee\'f1\'f2\'fc.\par
+\'cf\'f0\'e8\'ec\'e5\'ed\'e5\'ed\'e8\'e5:\par
+\'ca\'ee\'e3\'e4\'e0 \'ed\'f3\'e6\'ed\'ee \'f1\'e4\'e5\'eb\'e0\'f2\'fc \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'e1\'ee\'eb\'e5\'e5 \'e3\'e8\'e1\'ea\'e8\'ec\'e8 \'e8 \'e4\'e8\'ed\'e0\'ec\'e8\'f7\'ed\'fb\'ec\'e8.\par
+\'ca\'ee\'e3\'e4\'e0 \'ed\'f3\'e6\'ed\'ee \'f3\'ef\'f0\'e0\'e2\'eb\'ff\'f2\'fc \'f1\'eb\'ee\'e6\'ed\'fb\'ec\'e8 \'e0\'eb\'e3\'ee\'f0\'e8\'f2\'ec\'e0\'ec\'e8 \'e8 \'ef\'ee\'f1\'eb\'e5\'e4\'ee\'e2\'e0\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'ff\'ec\'e8 \'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e9.\par
+\'ca\'ee\'e3\'e4\'e0 \'ed\'f3\'e6\'ed\'ee \'f0\'e5\'e0\'eb\'e8\'e7\'ee\'e2\'e0\'f2\'fc \'e2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5 \'ec\'e5\'e6\'e4\'f3 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'ec\'e8, \'ed\'e5 \'e7\'ed\'e0\'ff \'e8\'f5 \'ea\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'f5 \'ea\'eb\'e0\'f1\'f1\'ee\'e2.\par
+\'ce\'f1\'ed\'ee\'e2\'ed\'fb\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'fb:\par
+Chain of Responsibility (\'d6\'e5\'ef\'ee\'f7\'ea\'e0 \'ee\'e1\'ff\'e7\'e0\'ed\'ed\'ee\'f1\'f2\'e5\'e9): \'cf\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ef\'e5\'f0\'e5\'e4\'e0\'e2\'e0\'f2\'fc \'e7\'e0\'ef\'f0\'ee\'f1 \'ef\'ee \'f6\'e5\'ef\'ee\'f7\'ea\'e5 \'ee\'e1\'f0\'e0\'e1\'ee\'f2\'f7\'e8\'ea\'ee\'e2, \'ef\'ee\'ea\'e0 \'ee\'e4\'e8\'ed \'e8\'e7 \'ed\'e8\'f5 \'ed\'e5 \'ee\'e1\'f0\'e0\'e1\'ee\'f2\'e0\'e5\'f2 \'e5\'e3\'ee.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'ce\'e1\'f0\'e0\'e1\'ee\'f2\'ea\'e0 \'e7\'e0\'ef\'f0\'ee\'f1\'ee\'e2 \'ed\'e0 \'e0\'e2\'f2\'ee\'f0\'e8\'e7\'e0\'f6\'e8\'fe \'f1 \'f0\'e0\'e7\'ed\'fb\'ec\'e8 \'f3\'f0\'ee\'e2\'ed\'ff\'ec\'e8 \'f0\'e0\'e7\'f0\'e5\'f8\'e5\'ed\'e8\'e9.\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'e9 \'ee\'e1\'f0\'e0\'e1\'ee\'f2\'f7\'e8\'ea\par
+    public abstract class Handler \{\par
+        protected Handler _successor\par
+            if (request < 10) \{ /*...*/ \} else if (_successor != null)\par
+                _successor.HandleRequest(request);\par
+        \}\par
+    \}\par
+    public class ConcreteHandler2 : Handler \{\par
+        public override void HandleRequest(int request) \{\par
+            if (request >= 10 && request < 20) \{ /*...*/ \}\par
+            else if (_successor != null)\par
+                _successor.HandleRequest(request);\par
+        \}\par
+    \}\par
+     // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+     Handler h1 = new ConcreteHandler1();\par
+     Handler h2 = new ConcreteHandler2();\par
+     h1.SetSuccessor(h2);\par
+     h1.HandleRequest(15);\par
+Command (\'ca\'ee\'ec\'e0\'ed\'e4\'e0): \'c8\'ed\'ea\'e0\'ef\'f1\'f3\'eb\'e8\'f0\'f3\'e5\'f2 \'e7\'e0\'ef\'f0\'ee\'f1 \'ea\'e0\'ea \'ee\'e1\'fa\'e5\'ea\'f2, \'f7\'f2\'ee \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e8\'e7\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'e7\'e0\'ef\'f0\'ee\'f1\'e0\'ec\'e8, \'f1\'f2\'e0\'e2\'e8\'f2\'fc \'e7\'e0\'ef\'f0\'ee\'f1\'fb \'e2 \'ee\'f7\'e5\'f0\'e5\'e4\'fc, \'ef\'f0\'ee\'f2\'ee\'ea\'ee\'eb\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'e8 \'ef\'ee\'e4\'e4\'e5\'f0\'e6\'e8\'e2\'e0\'f2\'fc \'ee\'f2\'ec\'e5\'ed\'f3 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e9.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e9 \'e2 \'f2\'e5\'ea\'f1\'f2\'ee\'e2\'ee\'ec \'f0\'e5\'e4\'e0\'ea\'f2\'ee\'f0\'e5 (\'ea\'ee\'ef\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5, \'e2\'f1\'f2\'e0\'e2\'ea\'e0, \'ee\'f2\'ec\'e5\'ed\'e0).\par
+    // \'c8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'ea\'ee\'ec\'e0\'ed\'e4\'fb\par
+    public interface ICommand \{ void Execute(); \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'e0\'ff \'ea\'ee\'ec\'e0\'ed\'e4\'e0\par
+    public class ConcreteCommand : ICommand \{\par
+        private string _receiver;\par
+        public ConcreteCommand(string receiver) \{ _receiver = receiver; \}\par
+        public void Execute() \{  /*...*/ \}\par
+    \}\par
+    // \'c2\'fb\'e7\'fb\'e2\'e0\'fe\'f9\'e8\'e9\par
+    public class Invoker \{\par
+       private ICommand _command;\par
+       public void SetCommand(ICommand command) \{ _command = command; \}\par
+       public void ExecuteCommand() \{ _command.Execute(); \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    ICommand command = new ConcreteCommand("test");\par
+    Invoker invoker = new Invoker();\par
+    invoker.SetCommand(command);\par
+    invoker.ExecuteCommand();\par
+Interpreter (\'c8\'ed\'f2\'e5\'f0\'ef\'f0\'e5\'f2\'e0\'f2\'ee\'f0): \'ce\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'e3\'f0\'e0\'ec\'ec\'e0\'f2\'e8\'ea\'f3 \'e8 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'e8\'ed\'f2\'e5\'f0\'ef\'f0\'e5\'f2\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'e2\'fb\'f0\'e0\'e6\'e5\'ed\'e8\'ff \'ed\'e0 \'ff\'e7\'fb\'ea\'e5.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d0\'e0\'e7\'e1\'ee\'f0 \'e0\'f0\'e8\'f4\'ec\'e5\'f2\'e8\'f7\'e5\'f1\'ea\'e8\'f5 \'e2\'fb\'f0\'e0\'e6\'e5\'ed\'e8\'e9 \'e8\'eb\'e8 SQL-\'e7\'e0\'ef\'f0\'ee\'f1\'ee\'e2.\par
+Iterator (\'c8\'f2\'e5\'f0\'e0\'f2\'ee\'f0): \'cf\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'ec\'e5\'f5\'e0\'ed\'e8\'e7\'ec \'e4\'eb\'ff \'e4\'ee\'f1\'f2\'f3\'ef\'e0 \'ea \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'e0\'ec \'ea\'ee\'eb\'eb\'e5\'ea\'f6\'e8\'e8 \'e1\'e5\'e7 \'f0\'e0\'f1\'ea\'f0\'fb\'f2\'e8\'ff \'e5\'e5 \'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e5\'e3\'ee \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'cf\'e5\'f0\'e5\'e1\'ee\'f0 \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'ee\'e2 \'f1\'ef\'e8\'f1\'ea\'e0 \'e8\'eb\'e8 \'e4\'e5\'f0\'e5\'e2\'e0.\par
+    // \'c8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'e8\'f2\'e5\'f0\'e0\'f2\'ee\'f0\'e0\par
+    public interface IIterator<T> \{\par
+       bool HasNext();\par
+       T Next();\par
+    \}\par
+    // \'c8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'ea\'ee\'eb\'eb\'e5\'ea\'f6\'e8\'e8\par
+    public interface ICollection<T> \{ IIterator<T> CreateIterator(); \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'e0\'ff \'ea\'ee\'eb\'eb\'e5\'ea\'f6\'e8\'ff\par
+    public class ConcreteCollection<T> : ICollection<T> \{\par
+        private T[] _items;\par
+        public ConcreteCollection(T[] items) \{ _items = items; \}\par
+        public IIterator<T> CreateIterator() \{ return new ConcreteIterator<T>(this); \}\par
+         internal T GetItem(int index) => _items[index];\par
+        internal int GetSize() => _items.Length;\par
+    \}\par
+     // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e9 \'e8\'f2\'e5\'f0\'e0\'f2\'ee\'f0\par
+     public class ConcreteIterator<T> : IIterator<T> \{\par
+          private ConcreteCollection<T> _collection;\par
+          private int _index = 0;\par
+          public ConcreteIterator(ConcreteCollection<T> collection) \{ _collection = collection; \}\par
+          public bool HasNext() \{ return _index < _collection.GetSize(); \}\par
+          public T Next() \{ return _collection.GetItem(_index++); \}\par
+     \}\par
+     // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+     ConcreteCollection<string> collection = new ConcreteCollection<string>(new []\{"1", "2", "3"\});\par
+     IIterator<string> iterator = collection.CreateIterator();\par
+     while (iterator.HasNext())\par
+     \{\par
+       string value = iterator.Next();\par
+     \}\par
+Mediator (\'cf\'ee\'f1\'f0\'e5\'e4\'ed\'e8\'ea): \'ce\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'ee\'e1\'fa\'e5\'ea\'f2, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e8\'ed\'ea\'e0\'ef\'f1\'f3\'eb\'e8\'f0\'f3\'e5\'f2 \'e2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5 \'ec\'e5\'e6\'e4\'f3 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'ec\'e8, \'f3\'ec\'e5\'ed\'fc\'f8\'e0\'ff \'e8\'f5 \'ef\'f0\'ff\'ec\'f3\'fe \'e7\'e0\'e2\'e8\'f1\'e8\'ec\'ee\'f1\'f2\'fc \'e4\'f0\'f3\'e3 \'ee\'f2 \'e4\'f0\'f3\'e3\'e0.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d3\'ef\'f0\'e0\'e2\'eb\'e5\'ed\'e8\'e5 \'e2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5\'ec \'ec\'e5\'e6\'e4\'f3 \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'e0\'ec\'e8 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fc\'f1\'ea\'ee\'e3\'ee \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'e0.\par
+Memento (\'d1\'ed\'e8\'ec\'ee\'ea): \'cf\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'f1\'ee\'f5\'f0\'e0\'ed\'ff\'f2\'fc \'e8 \'e2\'ee\'f1\'f1\'f2\'e0\'ed\'e0\'e2\'eb\'e8\'e2\'e0\'f2\'fc \'ef\'f0\'e5\'e4\'fb\'e4\'f3\'f9\'e8\'e5 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'e0.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff \'ec\'e5\'f5\'e0\'ed\'e8\'e7\'ec\'e0 \'ee\'f2\'ec\'e5\'ed\'fb (undo/redo).\par
+Observer (\'cd\'e0\'e1\'eb\'fe\'e4\'e0\'f2\'e5\'eb\'fc): \'ce\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'ec\'e5\'f5\'e0\'ed\'e8\'e7\'ec \'ef\'ee\'e4\'ef\'e8\'f1\'ea\'e8 \'ed\'e0 \'f1\'ee\'e1\'fb\'f2\'e8\'ff \'e8 \'f3\'e2\'e5\'e4\'ee\'ec\'eb\'e5\'ed\'e8\'ff \'ee\'e1 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff\'f5 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'e0.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d0\'e5\'e0\'ea\'f6\'e8\'ff \'ed\'e0 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff \'e4\'e0\'ed\'ed\'fb\'f5 \'e2 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fc\'f1\'ea\'ee\'ec \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'e5.\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'e9 \'ed\'e0\'e1\'eb\'fe\'e4\'e0\'f2\'e5\'eb\'fc\par
+    public interface IObserver \{ void Update(); \}\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'e9 \'ed\'e0\'e1\'eb\'fe\'e4\'e0\'e5\'ec\'fb\'e9\par
+    public abstract class Subject \{\par
+        private List<IObserver> _observers = new List<IObserver>();\par
+        public void Attach(IObserver observer) \{ _observers.Add(observer); \}\par
+        public void Detach(IObserver observer) \{ _observers.Remove(observer); \}\par
+        public void Notify() \{ _observers.ForEach(o => o.Update()); \}\par
+    \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e9 \'ed\'e0\'e1\'eb\'fe\'e4\'e0\'e5\'ec\'fb\'e9\par
+    public class ConcreteSubject : Subject \{\par
+        public int State \{ get; set; \}\par
+        public void ChangeState(int state) \{\par
+            State = state;\par
+            Notify();\par
+        \}\par
+    \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e9 \'ed\'e0\'e1\'eb\'fe\'e4\'e0\'f2\'e5\'eb\'fc\par
+    public class ConcreteObserver : IObserver \{\par
+       private ConcreteSubject _subject;\par
+       public ConcreteObserver(ConcreteSubject subject) \{ _subject = subject; \}\par
+       public void Update() \{ /*...*/ \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    ConcreteSubject subject = new ConcreteSubject();\par
+    ConcreteObserver observer = new ConcreteObserver(subject);\par
+    subject.Attach(observer);\par
+    subject.ChangeState(10);\par
+State (\'d1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e5): \'cf\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'f3 \'e8\'e7\'ec\'e5\'ed\'ff\'f2\'fc \'f1\'e2\'ee\'e5 \'ef\'ee\'e2\'e5\'e4\'e5\'ed\'e8\'e5 \'e2 \'e7\'e0\'e2\'e8\'f1\'e8\'ec\'ee\'f1\'f2\'e8 \'ee\'f2 \'e2\'ed\'f3\'f2\'f0\'e5\'ed\'ed\'e5\'e3\'ee \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'cc\'ee\'e4\'e5\'eb\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'e9 \'e8\'e3\'f0\'ee\'e2\'ee\'e3\'ee \'ef\'e5\'f0\'f1\'ee\'ed\'e0\'e6\'e0 \'e8\'eb\'e8 \'ef\'f0\'ee\'f6\'e5\'f1\'f1\'e0 \'e7\'e0\'ea\'e0\'e7\'e0.\par
+    // \'c8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff\par
+    public interface IState \{ void Handle(); \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e5 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff\par
+    public class ConcreteStateA : IState \{ public void Handle() \{ /*...*/ \} \}\par
+    public class ConcreteStateB : IState \{ public void Handle() \{ /*...*/ \} \}\par
+    // \'ca\'ee\'ed\'f2\'e5\'ea\'f1\'f2\par
+    public class Context \{\par
+        private IState _state;\par
+        public Context(IState state) \{ _state = state; \}\par
+        public void SetState(IState state) \{ _state = state; \}\par
+        public void Handle() \{ _state.Handle(); \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    IState stateA = new ConcreteStateA();\par
+    Context context = new Context(stateA);\par
+    context.Handle();\par
+    context.SetState(new ConcreteStateB());\par
+    context.Handle();\par
+Strategy (\'d1\'f2\'f0\'e0\'f2\'e5\'e3\'e8\'ff): \'ce\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'f1\'e5\'ec\'e5\'e9\'f1\'f2\'e2\'ee \'e0\'eb\'e3\'ee\'f0\'e8\'f2\'ec\'ee\'e2 \'e8 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'e2\'fb\'e1\'e8\'f0\'e0\'f2\'fc \'ee\'e4\'e8\'ed \'e8\'e7 \'ed\'e8\'f5 \'e2\'ee \'e2\'f0\'e5\'ec\'ff \'e2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff \'f0\'e0\'e7\'ed\'fb\'f5 \'e0\'eb\'e3\'ee\'f0\'e8\'f2\'ec\'ee\'e2 \'f1\'ee\'f0\'f2\'e8\'f0\'ee\'e2\'ea\'e8.\par
+     // \'c8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'f1\'f2\'f0\'e0\'f2\'e5\'e3\'e8\'e8\par
+     public interface ISortStrategy\par
+     \{\par
+         int[] Sort(int[] arr);\par
+     \}\par
+     // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e5 \'f1\'f2\'f0\'e0\'f2\'e5\'e3\'e8\'e8\par
+     public class BubbleSort : ISortStrategy\par
+     \{\par
+         public int[] Sort(int[] arr) \{  /*...*/ return arr; \}\par
+     \}\par
+     public class QuickSort : ISortStrategy\par
+     \{\par
+         public int[] Sort(int[] arr) \{ /*...*/ return arr; \}\par
+     \}\par
+     // \'ca\'ee\'ed\'f2\'e5\'ea\'f1\'f2\par
+     public class Sorter\par
+     \{\par
+         private ISortStrategy _strategy;\par
+         public void SetStrategy(ISortStrategy strategy) \{ _strategy = strategy; \}\par
+         public int[] Sort(int[] arr) \{ return _strategy.Sort(arr); \}\par
+     \}\par
+     // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+     Sorter sorter = new Sorter();\par
+     sorter.SetStrategy(new BubbleSort());\par
+     int[] sortedArr = sorter.Sort(new [] \{3,2,1\});\par
+Template Method (\'d8\'e0\'e1\'eb\'ee\'ed\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4): \'ce\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'ea\'e0\'f0\'ea\'e0\'f1 \'e0\'eb\'e3\'ee\'f0\'e8\'f2\'ec\'e0, \'ed\'ee \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ef\'ee\'e4\'ea\'eb\'e0\'f1\'f1\'e0\'ec \'ef\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'f2\'fc \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'ed\'fb\'e5 \'f8\'e0\'e3\'e8.\par
+\'cf\'f0\'e8\'ec\'e5\'f0: \'d0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'ff \'ee\'e1\'f9\'e5\'e3\'ee \'e0\'eb\'e3\'ee\'f0\'e8\'f2\'ec\'e0 \'ee\'e1\'f0\'e0\'e1\'ee\'f2\'ea\'e8 \'e4\'e0\'ed\'ed\'fb\'f5 \'f1 \'f0\'e0\'e7\'ed\'fb\'ec\'e8 \'fd\'f2\'e0\'ef\'e0\'ec\'e8.\par
+    // \'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'fb\'e9 \'ea\'eb\'e0\'f1\'f1\par
+    public abstract class AbstractClass \{\par
+        public void TemplateMethod() \{\par
+            PrimitiveOperation1();\par
+            PrimitiveOperation2();\par
+            Hook();\par
+        \}\par
+        protected abstract void PrimitiveOperation1();\par
+        protected abstract void PrimitiveOperation2();\par
+        protected virtual void Hook() \{ /*...*/ \}\par
+    \}\par
+    // \'ca\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'e9 \'ea\'eb\'e0\'f1\'f1\par
+    public class ConcreteClass : AbstractClass \{\par
+       protected override void PrimitiveOperation1() \{ /*...*/ \}\par
+       protected override void PrimitiveOperation2() \{ /*...*/ \}\par
+       protected override void Hook() \{ /* ... */ \}\par
+    \}\par
+    // \'c8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5\par
+    AbstractClass obj = new ConcreteClass();\par
+    obj.TemplateMethod();\par
+Visitor (\'cf\'ee\'f1\'e5\'f2\'e8\'f2\'e5\'eb\'fc): \'cf\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'e4\'ee\'e1\'e0\'e2\'eb\'ff\'f2\'fc \'ed\'ee\'e2\'fb\'e5 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e8 \'ea \'ea\'eb\'e0\'f1\'f1\'e0\'ec \'e1\'e5\'e7 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'ff \'e8\'f5 \'ea\'ee\'e4\'e0.\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0: \'c2\'fb\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'e5 \'f0\'e0\'e7\'ed\'fb\'f5 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e9 \'ed\'e0\'e4 \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'e0\'ec\'e8 \'e4\'e5\'f0\'e5\'e2\'e0.\b0\par
+\par
+\'c4\'e5\'eb\'e5\'e3\'e0\'f2 \'e2 C# \f1\emdash  \f0\'fd\'f2\'ee \'f2\'e8\'ef, \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'fe\'f9\'e8\'e9 \'f1\'f1\'fb\'eb\'ea\'f3 \'ed\'e0 \'ec\'e5\'f2\'ee\'e4. \'cf\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'fc\'f2\'e5 \'e4\'e5\'eb\'e5\'e3\'e0\'f2 \'ea\'e0\'ea \ldblquote\'f3\'ea\'e0\'e7\'e0\'f2\'e5\'eb\'fc \'ed\'e0 \'f4\'f3\'ed\'ea\'f6\'e8\'fe\rdblquote  (\'f5\'ee\'f2\'ff \'fd\'f2\'ee \'ed\'e5 \'f1\'ee\'e2\'f1\'e5\'ec \'f2\'ee\'f7\'ed\'fb\'e9 \'f2\'e5\'f5\'ed\'e8\'f7\'e5\'f1\'ea\'e8\'e9 \'f2\'e5\'f0\'ec\'e8\'ed, \'ed\'ee \'ee\'ed \'f5\'ee\'f0\'ee\'f8\'ee \'ef\'e5\'f0\'e5\'e4\'e0\'e5\'f2 \'f1\'f3\'f2\'fc). \'c4\'e5\'eb\'e5\'e3\'e0\'f2 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2:\par
+\'d5\'f0\'e0\'ed\'e8\'f2\'fc \'f1\'f1\'fb\'eb\'ea\'f3 \'ed\'e0 \'ec\'e5\'f2\'ee\'e4: \'c2\'fb \'ec\'ee\'e6\'e5\'f2\'e5 \'ef\'f0\'e8\'f1\'e2\'ee\'e8\'f2\'fc \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'f3 \'ec\'e5\'f2\'ee\'e4, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'e5\'f2 \'e5\'e3\'ee \'f1\'e8\'e3\'ed\'e0\'f2\'f3\'f0\'e5.\par
+\'c2\'fb\'e7\'fb\'e2\'e0\'f2\'fc \'ec\'e5\'f2\'ee\'e4 \'f7\'e5\'f0\'e5\'e7 \'e4\'e5\'eb\'e5\'e3\'e0\'f2: \'c2\'fb \'ec\'ee\'e6\'e5\'f2\'e5 \'e2\'fb\'e7\'e2\'e0\'f2\'fc \'ec\'e5\'f2\'ee\'e4, \'ed\'e0 \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'f1\'f1\'fb\'eb\'e0\'e5\'f2\'f1\'ff \'e4\'e5\'eb\'e5\'e3\'e0\'f2, \'ea\'e0\'ea \'e5\'f1\'eb\'e8 \'e1\'fb \'fd\'f2\'ee \'e1\'fb\'eb \'ee\'e1\'fb\'f7\'ed\'fb\'e9 \'e2\'fb\'e7\'ee\'e2 \'ec\'e5\'f2\'ee\'e4\'e0.\par
+\'cf\'e5\'f0\'e5\'e4\'e0\'e2\'e0\'f2\'fc \'ec\'e5\'f2\'ee\'e4\'fb \'ea\'e0\'ea \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb: \'c2\'fb \'ec\'ee\'e6\'e5\'f2\'e5 \'ef\'e5\'f0\'e5\'e4\'e0\'e2\'e0\'f2\'fc \'ec\'e5\'f2\'ee\'e4\'fb \'e2 \'ea\'e0\'f7\'e5\'f1\'f2\'e2\'e5 \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2\'ee\'e2 \'e4\'f0\'f3\'e3\'e8\'ec \'ec\'e5\'f2\'ee\'e4\'e0\'ec, \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'ff \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'fb.\par
+\'d1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'f6\'e5\'ef\'ee\'f7\'ea\'e8 \'e2\'fb\'e7\'ee\'e2\'ee\'e2: \'cc\'ee\'e6\'ed\'ee \'ee\'e1\'fa\'e5\'e4\'e8\'ed\'ff\'f2\'fc \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'ee \'ec\'e5\'f2\'ee\'e4\'ee\'e2 \'e2 \'ee\'e4\'e8\'ed \'e4\'e5\'eb\'e5\'e3\'e0\'f2.\par
+\'d0\'e5\'e0\'eb\'e8\'e7\'ee\'e2\'fb\'e2\'e0\'f2\'fc \'f1\'ee\'e1\'fb\'f2\'e8\'ff: \'c4\'e5\'eb\'e5\'e3\'e0\'f2\'fb \'ff\'e2\'eb\'ff\'fe\'f2\'f1\'ff \'ee\'f1\'ed\'ee\'e2\'ee\'e9 \'e4\'eb\'ff \'f0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'e8 \'f1\'ee\'e1\'fb\'f2\'e8\'e9 \'e2 C#.\par
+\b\'d1\'e8\'e3\'ed\'e0\'f2\'f3\'f0\'e0 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'e0\b0\par
+\'d2\'e8\'ef \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'e5\'ec\'ee\'e3\'ee \'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff: \'ca\'e0\'ea\'ee\'e9 \'f2\'e8\'ef \'e4\'e0\'ed\'ed\'fb\'f5 \'ec\'e5\'f2\'ee\'e4 \'e4\'ee\'eb\'e6\'e5\'ed \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'f2\'fc.\par
+\'d2\'e8\'ef\'fb \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2: \'ca\'e0\'ea\'e8\'e5 \'f2\'e8\'ef\'fb \'e4\'e0\'ed\'ed\'fb\'f5 \'ec\'e5\'f2\'ee\'e4 \'e4\'ee\'eb\'e6\'e5\'ed \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'f2\'fc \'e2 \'ea\'e0\'f7\'e5\'f1\'f2\'e2\'e5 \'e0\'f0\'e3\'f3\'ec\'e5\'ed\'f2\'ee\'e2.\par
+\b\'cf\'f0\'ee\'f1\'f2\'ee\'e9 \'ef\'f0\'e8\'ec\'e5\'f0 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'e0\b0\par
+using System;\par
+// 1. \'ce\'e1\'fa\'ff\'e2\'eb\'e5\'ed\'e8\'e5 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'e0\par
+public delegate int MathOperation(int a, int b);\par
+public class Calculator\par
+\{\par
+    // \'cc\'e5\'f2\'ee\'e4\'fb, \'ef\'ee\'e4\'f5\'ee\'e4\'ff\'f9\'e8\'e5 \'ef\'ee\'e4 \'f1\'e8\'e3\'ed\'e0\'f2\'f3\'f0\'f3 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'e0\par
+    public int Add(int a, int b) \{ return a + b; \}\par
+    public int Subtract(int a, int b) \{ return a - b; \}\par
+\}\par
+public class Program\par
+\{\par
+    public static void Main(string[] args)\par
+    \{\par
+        Calculator calculator = new Calculator();\par
+        // 2. \'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'fd\'ea\'e7\'e5\'ec\'ef\'eb\'ff\'f0\'e0 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'e0 \'e8 \'ef\'f0\'e8\'f1\'e2\'ee\'e5\'ed\'e8\'e5 \'e5\'ec\'f3 \'ec\'e5\'f2\'ee\'e4\'e0\par
+        MathOperation operation = calculator.Add; \par
+        //\'c8\'eb\'e8 \'f2\'e0\'ea: MathOperation operation = new MathOperation(calculator.Add);\par
+        // 3. \'c2\'fb\'e7\'ee\'e2 \'ec\'e5\'f2\'ee\'e4\'e0 \'f7\'e5\'f0\'e5\'e7 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\par
+        int result1 = operation(5, 3);\par
+        Console.WriteLine($"\'d0\'e5\'e7\'f3\'eb\'fc\'f2\'e0\'f2 \'f1\'eb\'ee\'e6\'e5\'ed\'e8\'ff: \{result1\}"); // \'c2\'fb\'e2\'ee\'e4: 8\par
+        // 4. \'c8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e5 \'ec\'e5\'f2\'ee\'e4\'e0, \'ed\'e0 \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'f1\'f1\'fb\'eb\'e0\'e5\'f2\'f1\'ff \'e4\'e5\'eb\'e5\'e3\'e0\'f2\par
+        operation = calculator.Subtract;\par
+        int result2 = operation(5, 3);\par
+        Console.WriteLine($"\'d0\'e5\'e7\'f3\'eb\'fc\'f2\'e0\'f2 \'e2\'fb\'f7\'e8\'f2\'e0\'ed\'e8\'ff: \{result2\}"); // \'c2\'fb\'e2\'ee\'e4: 2\par
+        Console.ReadKey();\par
+    \}\par
+\}\par
+\'cf\'ee\'ff\'f1\'ed\'e5\'ed\'e8\'ff \'ea \'ef\'f0\'e8\'ec\'e5\'f0\'f3:\par
+public delegate int MathOperation(int a, int b); : \'cc\'fb \'ee\'e1\'fa\'ff\'e2\'eb\'ff\'e5\'ec \'e4\'e5\'eb\'e5\'e3\'e0\'f2 MathOperation, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ec\'ee\'e6\'e5\'f2 \'f1\'f1\'fb\'eb\'e0\'f2\'fc\'f1\'ff \'ed\'e0 \'ec\'e5\'f2\'ee\'e4\'fb, \'ef\'f0\'e8\'ed\'e8\'ec\'e0\'fe\'f9\'e8\'e5 \'e4\'e2\'e0 \'f6\'e5\'eb\'fb\'f5 \'f7\'e8\'f1\'eb\'e0 \'e8 \'e2\'ee\'e7\'e2\'f0\'e0\'f9\'e0\'fe\'f9\'e8\'e5 \'f6\'e5\'eb\'ee\'e5 \'f7\'e8\'f1\'eb\'ee.\par
+MathOperation operation = calculator.Add; : \'cc\'fb \'f1\'ee\'e7\'e4\'e0\'e5\'ec \'fd\'ea\'e7\'e5\'ec\'ef\'eb\'ff\'f0 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'e0 operation \'e8 \'ef\'f0\'e8\'f1\'e2\'e0\'e8\'e2\'e0\'e5\'ec \'e5\'ec\'f3 \'ec\'e5\'f2\'ee\'e4 Add \'e8\'e7 \'ee\'e1\'fa\'e5\'ea\'f2\'e0 calculator.\par
+int result1 = operation(5, 3); : \'c2\'fb\'e7\'fb\'e2\'e0\'e5\'ec \'ec\'e5\'f2\'ee\'e4 Add (\'ed\'e0 \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'f1\'f1\'fb\'eb\'e0\'e5\'f2\'f1\'ff operation) \'f7\'e5\'f0\'e5\'e7 \'e4\'e5\'eb\'e5\'e3\'e0\'f2.\par
+operation = calculator.Subtract; : \'cf\'e5\'f0\'e5\'ed\'e0\'ef\'f0\'e0\'e2\'eb\'ff\'e5\'ec \'e4\'e5\'eb\'e5\'e3\'e0\'f2 operation \'ed\'e0 \'ec\'e5\'f2\'ee\'e4 Subtract.\par
+\f2\lang1033 ___\par
+\b\f0\lang1049\'ce\'f1\'ed\'ee\'e2\'ed\'fb\'e5 \'e3\'f0\'f3\'ef\'ef\'fb \'f8\'e0\'e1\'eb\'ee\'ed\'ee\'e2 \'ef\'f0\'ee\'e5\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff\b0\par
+\'d8\'e0\'e1\'eb\'ee\'ed\'fb \'ef\'f0\'ee\'e5\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'e4\'e5\'eb\'ff\'f2\'f1\'ff \'ed\'e0 \'f2\'f0\'e8 \'ee\'f1\'ed\'ee\'e2\'ed\'fb\'e5 \'e3\'f0\'f3\'ef\'ef\'fb: \'ef\'ee\'f0\'ee\'e6\'e4\'e0\'fe\'f9\'e8\'e5, \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'ed\'fb\'e5 \'e8 \'ef\'ee\'e2\'e5\'e4\'e5\'ed\'f7\'e5\'f1\'ea\'e8\'e5. \'c4\'e0\'e2\'e0\'e9\'f2\'e5 \'f0\'e0\'f1\'f1\'ec\'ee\'f2\'f0\'e8\'ec \'ea\'e0\'e6\'e4\'f3\'fe \'e8\'e7 \'ed\'e8\'f5 \'ef\'ee\'e4\'f0\'ee\'e1\'ed\'e5\'e5.\par
+\b\'cf\'ee\'f0\'ee\'e6\'e4\'e0\'fe\'f9\'e8\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'fb\b0\par
+\'cf\'ee\'f0\'ee\'e6\'e4\'e0\'fe\'f9\'e8\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'fb \'ef\'f0\'ee\'e5\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'f1\'e2\'ff\'e7\'e0\'ed\'fb \'f1 \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'e5\'ec \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2. \'ce\'ed\'e8 \'ef\'ee\'ec\'ee\'e3\'e0\'fe\'f2 \'e0\'e1\'f1\'f2\'f0\'e0\'e3\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'ef\'f0\'ee\'f6\'e5\'f1\'f1 \'e8\'ed\'f1\'f2\'e0\'ed\'f6\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'e8 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'fe\'f2 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'e3\'e8\'e1\'ea\'e8\'ec \'e8 \'ea\'ee\'ed\'f2\'f0\'ee\'eb\'e8\'f0\'f3\'e5\'ec\'fb\'ec \'ee\'e1\'f0\'e0\'e7\'ee\'ec.\par
+\b Singleton \b0 (\'ce\'e4\'e8\'ed\'ee\'f7\'ea\'e0): \'c3\'e0\'f0\'e0\'ed\'f2\'e8\'f0\'f3\'e5\'f2, \'f7\'f2\'ee \'f3 \'ea\'eb\'e0\'f1\'f1\'e0 \'e5\'f1\'f2\'fc \'f2\'ee\'eb\'fc\'ea\'ee \'ee\'e4\'e8\'ed \'fd\'ea\'e7\'e5\'ec\'ef\'eb\'ff\'f0, \'e8 \'ef\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'e3\'eb\'ee\'e1\'e0\'eb\'fc\'ed\'f3\'fe \'f2\'ee\'f7\'ea\'f3 \'e4\'ee\'f1\'f2\'f3\'ef\'e0 \'ea \'ed\'e5\'ec\'f3.\par
+public class Singleton\par
+\{\par
+    private static Singleton instance;\par
+    private Singleton() \{ \}\par
+    public static Singleton Instance\par
+    \{\par
+        get\par
+        \{\par
+            if (instance == null)\par
+            \{\par
+                instance = new Singleton();\par
+            \}\par
+            return instance;\par
+        \}\par
+    \}\par
+\}\par
+\b Factory Method \b0 (\'d4\'e0\'e1\'f0\'e8\'f7\'ed\'fb\'e9 \'ec\'e5\'f2\'ee\'e4): \'ce\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'e4\'eb\'ff \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'ff \'ee\'e1\'fa\'e5\'ea\'f2\'e0, \'ed\'ee \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ef\'ee\'e4\'ea\'eb\'e0\'f1\'f1\'e0\'ec \'e8\'e7\'ec\'e5\'ed\'ff\'f2\'fc \'f2\'e8\'ef \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'e5\'ec\'ee\'e3\'ee \'ee\'e1\'fa\'e5\'ea\'f2\'e0.\par
+public abstract class Creator\par
+\{\par
+    public abstract IProduct FactoryMethod();\par
+\}\par
+public class ConcreteCreator : Creator\par
+\{\par
+    public override IProduct FactoryMethod()\par
+    \{\par
+        return new ConcreteProduct();\par
+    \}\par
+\}\par
+\b Abstract Factory \b0 (\'c0\'e1\'f1\'f2\'f0\'e0\'ea\'f2\'ed\'e0\'ff \'f4\'e0\'e1\'f0\'e8\'ea\'e0): \'cf\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'e4\'eb\'ff \'f1\'ee\'e7\'e4\'e0\'ed\'e8\'ff \'f1\'e5\'ec\'e5\'e9\'f1\'f2\'e2 \'f1\'e2\'ff\'e7\'e0\'ed\'ed\'fb\'f5 \'e8\'eb\'e8 \'e7\'e0\'e2\'e8\'f1\'e8\'ec\'fb\'f5 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'e1\'e5\'e7 \'f3\'ea\'e0\'e7\'e0\'ed\'e8\'ff \'e8\'f5 \'ea\'ee\'ed\'ea\'f0\'e5\'f2\'ed\'fb\'f5 \'ea\'eb\'e0\'f1\'f1\'ee\'e2.\par
+public interface IAbstractFactory\par
+\{\par
+    IProductA CreateProductA();\par
+    IProductB CreateProductB();\par
+\}\par
+public class ConcreteFactory1 : IAbstractFactory\par
+\{\par
+    public IProductA CreateProductA() \{ return new ProductA1(); \}\par
+    public IProductB CreateProductB() \{ return new ProductB1(); \}\par
+\}\par
+\b\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'ed\'fb\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'fb\b0\par
+\'d1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'ed\'fb\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'fb \'ef\'f0\'ee\'e5\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'f1\'e2\'ff\'e7\'e0\'ed\'fb \'f1 \'ea\'ee\'ec\'ef\'ee\'e7\'e8\'f6\'e8\'e5\'e9 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'e8 \'ea\'eb\'e0\'f1\'f1\'ee\'e2. \'ce\'ed\'e8 \'ef\'ee\'ec\'ee\'e3\'e0\'fe\'f2 \'ee\'e1\'e5\'f1\'ef\'e5\'f7\'e8\'f2\'fc \'e3\'e8\'e1\'ea\'ee\'f1\'f2\'fc \'e8 \'fd\'f4\'f4\'e5\'ea\'f2\'e8\'e2\'ed\'ee\'f1\'f2\'fc \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'f1\'e8\'f1\'f2\'e5\'ec\'fb.\par
+\b Adapter \b0 (\'c0\'e4\'e0\'ef\'f2\'e5\'f0): \'cf\'f0\'e5\'ee\'e1\'f0\'e0\'e7\'f3\'e5\'f2 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'ea\'eb\'e0\'f1\'f1\'e0 \'e2 \'e4\'f0\'f3\'e3\'ee\'e9 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ee\'e6\'e8\'e4\'e0\'fe\'f2 \'ea\'eb\'e8\'e5\'ed\'f2\'fb. \'c0\'e4\'e0\'ef\'f2\'e5\'f0 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ea\'eb\'e0\'f1\'f1\'e0\'ec \'f1 \'ed\'e5\'f1\'ee\'e2\'ec\'e5\'f1\'f2\'e8\'ec\'fb\'ec\'e8 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'e0\'ec\'e8 \'f0\'e0\'e1\'ee\'f2\'e0\'f2\'fc \'e2\'ec\'e5\'f1\'f2\'e5.\par
+public interface ITarget\par
+\{\par
+    void Request();\par
+\}\par
+public class Adaptee\par
+\{\par
+    public void SpecificRequest() \{ \}\par
+\}\par
+public class Adapter : ITarget\par
+\{\par
+    private Adaptee adaptee = new Adaptee();\par
+    public void Request()\par
+    \{\par
+        adaptee.SpecificRequest();\par
+    \}\par
+\}\par
+\b Composite \b0 (\'ca\'ee\'ec\'ef\'ee\'ed\'ee\'e2\'f9\'e8\'ea): \'d1\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'e2 \'e4\'f0\'e5\'e2\'ee\'e2\'e8\'e4\'ed\'fb\'e5 \'f1\'f2\'f0\'f3\'ea\'f2\'f3\'f0\'fb \'e4\'eb\'ff \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'e8\'e5\'f0\'e0\'f0\'f5\'e8\'e9 "\'f7\'e0\'f1\'f2\'fc-\'f6\'e5\'eb\'ee\'e5". \'ca\'ee\'ec\'ef\'ee\'ed\'ee\'e2\'f9\'e8\'ea \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'ea\'eb\'e8\'e5\'ed\'f2\'e0\'ec \'e5\'e4\'e8\'ed\'ee\'ee\'e1\'f0\'e0\'e7\'ed\'ee \'ee\'e1\'f0\'e0\'e1\'e0\'f2\'fb\'e2\'e0\'f2\'fc \'ee\'f2\'e4\'e5\'eb\'fc\'ed\'fb\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'e8 \'e8\'f5 \'ea\'ee\'ec\'ef\'ee\'e7\'e8\'f6\'e8\'e8.\par
+public interface IComponent\par
+\{\par
+    void Operation();\par
+\}\par
+\par
+public class Leaf : IComponent\par
+\{\par
+    public void Operation() \{ \}\par
+\}\par
+public class Composite : IComponent\par
+\{\par
+    private List<IComponent> children = new List<IComponent>();\par
+    public void Operation()\par
+    \{\par
+        foreach (var child in children)\par
+        \{\par
+            child.Operation();\par
+        \}\par
+    \}\par
+    public void Add(IComponent component) \{ children.Add(component); \}\par
+    public void Remove(IComponent component) \{ children.Remove(component); \}\par
+\}\par
+\b Decorator \b0 (\'c4\'e5\'ea\'ee\'f0\'e0\'f2\'ee\'f0): \'c4\'e8\'ed\'e0\'ec\'e8\'f7\'e5\'f1\'ea\'e8 \'e4\'ee\'e1\'e0\'e2\'eb\'ff\'e5\'f2 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'ec \'ed\'ee\'e2\'fb\'e5 \'ee\'e1\'ff\'e7\'e0\'ed\'ed\'ee\'f1\'f2\'e8. \'c4\'e5\'ea\'ee\'f0\'e0\'f2\'ee\'f0\'fb \'ef\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'fe\'f2 \'e3\'e8\'e1\'ea\'f3\'fe \'e0\'eb\'fc\'f2\'e5\'f0\'ed\'e0\'f2\'e8\'e2\'f3 \'ed\'e0\'f1\'eb\'e5\'e4\'ee\'e2\'e0\'ed\'e8\'fe \'e4\'eb\'ff \'f0\'e0\'f1\'f8\'e8\'f0\'e5\'ed\'e8\'ff \'f4\'f3\'ed\'ea\'f6\'e8\'ee\'ed\'e0\'eb\'fc\'ed\'ee\'f1\'f2\'e8.\par
+public abstract class Component\par
+\{\par
+    public abstract void Operation();\par
+\}\par
+public class ConcreteComponent : Component\par
+\{\par
+    public override void Operation() \{ \}\par
+\}\par
+public abstract class Decorator : Component\par
+\{\par
+    protected Component component;\par
+    public void SetComponent(Component component) \{ this.component = component; \}\par
+    public override void Operation()\par
+    \{\par
+        if (component != null)\par
+        \{\par
+            component.Operation();\par
+        \}\par
+    \}\par
+\}\par
+public class ConcreteDecorator : Decorator\par
+\{\par
+    public override void Operation()\par
+    \{\par
+        base.Operation();\par
+        // \'c4\'ee\'e1\'e0\'e2\'e8\'f2\'fc \'ed\'ee\'e2\'ee\'e5 \'ef\'ee\'e2\'e5\'e4\'e5\'ed\'e8\'e5\par
+    \}\par
+\}\par
+\b\'cf\'ee\'e2\'e5\'e4\'e5\'ed\'f7\'e5\'f1\'ea\'e8\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'fb\b0\par
+\'cf\'ee\'e2\'e5\'e4\'e5\'ed\'f7\'e5\'f1\'ea\'e8\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'fb \'ef\'f0\'ee\'e5\'ea\'f2\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'f1\'e2\'ff\'e7\'e0\'ed\'fb \'f1 \'e2\'e7\'e0\'e8\'ec\'ee\'e4\'e5\'e9\'f1\'f2\'e2\'e8\'e5\'ec \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'e8 \'f0\'e0\'f1\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'e5\'ec \'ee\'e1\'ff\'e7\'e0\'ed\'ed\'ee\'f1\'f2\'e5\'e9 \'ec\'e5\'e6\'e4\'f3 \'ed\'e8\'ec\'e8. \'ce\'ed\'e8 \'ef\'ee\'ec\'ee\'e3\'e0\'fe\'f2 \'ee\'e1\'e5\'f1\'ef\'e5\'f7\'e8\'f2\'fc \'e3\'e8\'e1\'ea\'ee\'f1\'f2\'fc \'e8 \'f0\'e0\'f1\'f8\'e8\'f0\'ff\'e5\'ec\'ee\'f1\'f2\'fc \'f1\'e8\'f1\'f2\'e5\'ec\'fb.\par
+\b Observer \b0 (\'cd\'e0\'e1\'eb\'fe\'e4\'e0\'f2\'e5\'eb\'fc): \'ce\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'e7\'e0\'e2\'e8\'f1\'e8\'ec\'ee\'f1\'f2\'fc "\'ee\'e4\'e8\'ed \'ea\'ee \'ec\'ed\'ee\'e3\'e8\'ec" \'ec\'e5\'e6\'e4\'f3 \'ee\'e1\'fa\'e5\'ea\'f2\'e0\'ec\'e8, \'f2\'e0\'ea \'f7\'f2\'ee \'ef\'f0\'e8 \'e8\'e7\'ec\'e5\'ed\'e5\'ed\'e8\'e8 \'f1\'ee\'f1\'f2\'ee\'ff\'ed\'e8\'ff \'ee\'e4\'ed\'ee\'e3\'ee \'ee\'e1\'fa\'e5\'ea\'f2\'e0 \'e2\'f1\'e5 \'e7\'e0\'e2\'e8\'f1\'e8\'ec\'fb\'e5 \'ee\'e1\'fa\'e5\'ea\'f2\'fb \'f3\'e2\'e5\'e4\'ee\'ec\'eb\'ff\'fe\'f2\'f1\'ff \'e8 \'ee\'e1\'ed\'ee\'e2\'eb\'ff\'fe\'f2\'f1\'ff \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e8\'f7\'e5\'f1\'ea\'e8.\par
+public interface IObserver\par
+\{\par
+    void Update();\par
+\}\par
+public class ConcreteObserver : IObserver\par
+\{\par
+    public void Update() \{ \}\par
+\}\par
+public class Subject\par
+\{\par
+    private List<IObserver> observers = new List<IObserver>();\par
+    public void Attach(IObserver observer) \{ observers.Add(observer); \}\par
+    public void Detach(IObserver observer) \{ observers.Remove(observer); \}\par
+    public void Notify()\par
+    \{\par
+        foreach (var observer in observers)\par
+        \{\par
+            observer.Update();\par
+        \}\par
+    \}\par
+\}\par
+\b Strategy \b0 (\'d1\'f2\'f0\'e0\'f2\'e5\'e3\'e8\'ff): \'ce\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'f1\'e5\'ec\'e5\'e9\'f1\'f2\'e2\'ee \'e0\'eb\'e3\'ee\'f0\'e8\'f2\'ec\'ee\'e2, \'e8\'ed\'ea\'e0\'ef\'f1\'f3\'eb\'e8\'f0\'f3\'e5\'f2 \'ea\'e0\'e6\'e4\'fb\'e9 \'e8\'e7 \'ed\'e8\'f5 \'e8 \'e4\'e5\'eb\'e0\'e5\'f2 \'e8\'f5 \'e2\'e7\'e0\'e8\'ec\'ee\'e7\'e0\'ec\'e5\'ed\'ff\'e5\'ec\'fb\'ec\'e8. \'d1\'f2\'f0\'e0\'f2\'e5\'e3\'e8\'ff \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'e5\'f2 \'e8\'e7\'ec\'e5\'ed\'ff\'f2\'fc \'e0\'eb\'e3\'ee\'f0\'e8\'f2\'ec\'fb \'ed\'e5\'e7\'e0\'e2\'e8\'f1\'e8\'ec\'ee \'ee\'f2 \'ea\'eb\'e8\'e5\'ed\'f2\'ee\'e2, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'e8\'ec\'e8 \'ef\'ee\'eb\'fc\'e7\'f3\'fe\'f2\'f1\'ff.\par
+public interface IStrategy\par
+\{\par
+    void Algorithm();\par
+\}\par
+public class ConcreteStrategyA : IStrategy\par
+\{\par
+    public void Algorithm() \{ \}\par
+\}\par
+public class Context\par
+\{\par
+    private IStrategy strategy;\par
+    public void SetStrategy(IStrategy strategy) \{ this.strategy = strategy; \}\par
+    public void ExecuteStrategy() \{ strategy.Algorithm(); \}\par
+\}\par
+\b Command \b0 (\'ca\'ee\'ec\'e0\'ed\'e4\'e0): \'c8\'ed\'ea\'e0\'ef\'f1\'f3\'eb\'e8\'f0\'f3\'e5\'f2 \'e7\'e0\'ef\'f0\'ee\'f1 \'ea\'e0\'ea \'ee\'e1\'fa\'e5\'ea\'f2, \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'ff \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'e8\'e7\'ee\'e2\'e0\'f2\'fc \'ea\'eb\'e8\'e5\'ed\'f2\'ee\'e2 \'f1 \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'ec\'e8 \'e7\'e0\'ef\'f0\'ee\'f1\'e0\'ec\'e8, \'ee\'f7\'e5\'f0\'e5\'e4\'ff\'ec\'e8 \'e8\'eb\'e8 \'eb\'ee\'e3\'e0\'ec\'e8 \'e7\'e0\'ef\'f0\'ee\'f1\'ee\'e2, \'e0 \'f2\'e0\'ea\'e6\'e5 \'ef\'ee\'e4\'e4\'e5\'f0\'e6\'e8\'e2\'e0\'f2\'fc \'ee\'f2\'ec\'e5\'ed\'f3 \'ee\'ef\'e5\'f0\'e0\'f6\'e8\'e9.\par
+public interface ICommand\par
+\{\par
+    void Execute();\par
+\}\par
+public class ConcreteCommand : ICommand\par
+\{\par
+    private Receiver receiver;\par
+    public ConcreteCommand(Receiver receiver) \{ this.receiver = receiver; \}\par
+    public void Execute() \{ receiver.Action(); \}\par
+\}\par
+public class Receiver\par
+\{\par
+    public void Action() \{ \}\par
+\}\par
+public class Invoker\par
+\{\par
+    private ICommand command;\par
+    public void SetCommand(ICommand command) \{ this.command = command; \}\par
+    public void ExecuteCommand() \{ command.Execute(); \}\par
+\}\par
+\par
+\b\'c4\'e5\'eb\'e5\'e3\'e0\'f2\'fb \'e2 C#\b0\par
+\b\'c4\'e5\'eb\'e5\'e3\'e0\'f2\'fb \b0\f1\emdash  \f0\'fd\'f2\'ee \'f2\'e8\'ef\'fb, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'fe\'f2 \'f1\'f1\'fb\'eb\'ea\'e8 \'ed\'e0 \'ec\'e5\'f2\'ee\'e4\'fb \'f1 \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'ed\'ee\'e9 \'f1\'e8\'e3\'ed\'e0\'f2\'f3\'f0\'ee\'e9. \'ce\'ed\'e8 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'fe\'f2 \'ef\'e5\'f0\'e5\'e4\'e0\'e2\'e0\'f2\'fc \'ec\'e5\'f2\'ee\'e4\'fb \'ea\'e0\'ea \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb \'e8 \'e2\'fb\'e7\'fb\'e2\'e0\'f2\'fc \'e8\'f5 \'e4\'e8\'ed\'e0\'ec\'e8\'f7\'e5\'f1\'ea\'e8. \'c4\'e5\'eb\'e5\'e3\'e0\'f2\'fb \'f7\'e0\'f1\'f2\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'fe\'f2\'f1\'ff \'e4\'eb\'ff \'f0\'e5\'e0\'eb\'e8\'e7\'e0\'f6\'e8\'e8 \'f1\'ee\'e1\'fb\'f2\'e8\'e9 \'e8 \'ee\'e1\'f0\'e0\'f2\'ed\'fb\'f5 \'e2\'fb\'e7\'ee\'e2\'ee\'e2.\par
+\b\'cf\'f0\'e8\'ec\'e5\'f0\'fb \'ed\'e0 \'ff\'e7\'fb\'ea\'e5 C#\par
+\'ce\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'e5 \'e8 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'e0\par
+\b0 // \'ce\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'e8\'e5 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'e0\par
+public delegate void MyDelegate(string message);\par
+public class Program\par
+\{\par
+    // \'cc\'e5\'f2\'ee\'e4, \'f1\'ee\'ee\'f2\'e2\'e5\'f2\'f1\'f2\'e2\'f3\'fe\'f9\'e8\'e9 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'f3\par
+    public static void PrintMessage(string message)\par
+    \{\par
+        Console.WriteLine(message);\par
+    \}\par
+    public static void Main()\par
+    \{\par
+        // \'d1\'ee\'e7\'e4\'e0\'ed\'e8\'e5 \'fd\'ea\'e7\'e5\'ec\'ef\'eb\'ff\'f0\'e0 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\'e0\par
+        MyDelegate del = new MyDelegate(PrintMessage);\par
+        // \'c2\'fb\'e7\'ee\'e2 \'ec\'e5\'f2\'ee\'e4\'e0 \'f7\'e5\'f0\'e5\'e7 \'e4\'e5\'eb\'e5\'e3\'e0\'f2\par
+        del("Hello, World!");\par
+    \}\b\i\f2\lang9\par
+}
+ 

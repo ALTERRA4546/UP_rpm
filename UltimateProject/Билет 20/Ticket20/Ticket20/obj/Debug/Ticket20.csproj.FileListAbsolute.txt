@@ -1,0 +1,15 @@
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\bin\Debug\Ticket20.exe.config
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\bin\Debug\Ticket20.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\bin\Debug\Ticket20.pdb
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\Ticket20.csproj.AssemblyReference.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\MainWindow.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\App.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\Ticket20_MarkupCompile.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\Ticket20_MarkupCompile.lref
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\MainWindow.baml
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\Ticket20.g.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\Ticket20.Properties.Resources.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\Ticket20.csproj.GenerateResource.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\Ticket20.csproj.CoreCompileInputs.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\Ticket20.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 20\Ticket20\Ticket20\obj\Debug\Ticket20.pdb

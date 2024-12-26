@@ -1,0 +1,15 @@
+C:\Users\KING\source\repos\Ticket12\Ticket12\bin\Debug\Ticket12.exe.config
+C:\Users\KING\source\repos\Ticket12\Ticket12\bin\Debug\Ticket12.exe
+C:\Users\KING\source\repos\Ticket12\Ticket12\bin\Debug\Ticket12.pdb
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\Ticket12.csproj.AssemblyReference.cache
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\MainWindow.g.cs
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\App.g.cs
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\Ticket12_MarkupCompile.cache
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\Ticket12_MarkupCompile.lref
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\MainWindow.baml
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\Ticket12.g.resources
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\Ticket12.Properties.Resources.resources
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\Ticket12.csproj.GenerateResource.cache
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\Ticket12.csproj.CoreCompileInputs.cache
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\Ticket12.exe
+C:\Users\KING\source\repos\Ticket12\Ticket12\obj\Debug\Ticket12.pdb

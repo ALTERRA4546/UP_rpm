@@ -1,0 +1,15 @@
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\bin\Debug\Ticket23.exe.config
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\bin\Debug\Ticket23.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\bin\Debug\Ticket23.pdb
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\Ticket23.csproj.AssemblyReference.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\MainWindow.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\App.g.cs
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\Ticket23_MarkupCompile.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\Ticket23_MarkupCompile.lref
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\MainWindow.baml
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\Ticket23.g.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\Ticket23.Properties.Resources.resources
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\Ticket23.csproj.GenerateResource.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\Ticket23.csproj.CoreCompileInputs.cache
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\Ticket23.exe
+C:\Users\KING\Desktop\Билеты РПМ\Билет 23\Ticket23\Ticket23\obj\Debug\Ticket23.pdb
